@@ -9,10 +9,11 @@ import {
   DefaultLanguage,
   ModuleType,
   SelectedModule,
-  List,EnumList,
+  List,
+  EnumList,
   Text,
   Files,
-  Dictionaries
+  Dictionaries,
 } from './ArtigioModel';
 import ArtigioParser from './ArtigioParser';
 
@@ -28,8 +29,9 @@ export {
   DefaultLanguage,
   ModuleType,
   SelectedModule,
-  List,EnumList,
+  List,
+  EnumList,
   Text,
   Files,
-  Dictionaries
-}
+  Dictionaries,
+};

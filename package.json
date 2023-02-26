@@ -16,7 +16,15 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "keywords": ["Artigio", "CMS", "ModelParser"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebProSoftware/artigio-parser"
+  },
+  "keywords": [
+    "Artigio",
+    "CMS",
+    "ModelParser"
+  ],
   "author": "Patryk Przybek Artig.IO",
   "license": "ISC",
   "devDependencies": {

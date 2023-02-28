@@ -20,13 +20,6 @@ const screens = artigio.getScreens();
 
 const appScreenDataCurrentLang = artigio.getScreenDataByCurrentLang("app", true);
 
-try {
-  const appScreenDataEn = artigio.getScreenDataByLang("app", "ff", true);
-  console.log(appScreenDataEn);
-} catch (e) {
-  console.log(e);
-}
-
 const appScreenDataAllLang = artigio.getAllLangScreenData("app", true);
 
 

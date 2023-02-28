@@ -76,9 +76,12 @@ class ArtigioParser {
   }
 
   public getAllLangScreenData(screenKey: string, usePrefix: boolean = false): any {
-    const result: any[] = [];
+    let result: object = {};
     this.getLanguageList().forEach((item, idx) => {
-      result.push({ [item.tag]: ArtigioHelper.prepareModelElement(this.getScreen(screenKey, usePrefix), item.tag) });
+      result = {
+        ...result,
+        [item.tag]: ArtigioHelper.prepareModelElement(this.getScreen(screenKey, usePrefix), item.tag),
+      };
     });
     return result;
   }

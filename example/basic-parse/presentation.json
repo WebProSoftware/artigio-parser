@@ -1,20 +1,20 @@
 {
   "translations": [],
   "presentationSettings": {
-    "presentationId": "ed3634dd-8563-417a-941a-43506dcacbfd",
-    "key": "kpn-st14-fotobudka",
-    "name": "kpn.st14.fotobudka",
+    "presentationId": "8b5014ec-58b9-40b3-a4bf-b33a71066de7",
+    "key": "cog-3-mm5-music-table",
+    "name": "cog.3.mm5.music-table",
     "defaultLanguage": {
       "name": "Polish",
       "value": 1,
       "tag": "pl"
     },
-    "mediaPath": "/kpn_st14_app02_fotobudka_Data/StreamingAssets/",
+    "mediaPath": null,
     "shouldIncludeMediaPath": false,
     "stylePath": "presentation.css",
     "resolution": {
-      "width": 1080,
-      "height": 1920
+      "width": 1920,
+      "height": 1080
     }
   },
   "dictionaries": {
@@ -23,77 +23,51 @@
         "id": 0,
         "name": "Custom",
         "keys": [
-          "kpn-st14-app02-app",
-          "kpn-st14-app02-app-painting"
-        ]
-      },
-      {
-        "id": 13,
-        "name": "Number",
-        "keys": [
-          "screensaver-timeout",
-          "picture-screen-duration"
-        ]
-      },
-      {
-        "id": 4,
-        "name": "File",
-        "keys": [
-          "start-screen-bg",
-          "instruction-screen-bg",
-          "choose-screen-bg",
-          "form-screen-bg",
-          "end-screen-bg",
-          "thumbnail",
-          "image"
-        ]
-      },
-      {
-        "id": 2,
-        "name": "RichTextArea",
-        "keys": [
-          "start-screen-title",
-          "start-screen-button-label",
-          "instruction-screen-title",
-          "instruction-screen-text",
-          "choose-screen-title",
-          "picture-screen-title",
-          "form-screen-title",
-          "form-screen-policy-link",
-          "form-screen-policy-title",
-          "form-screen-policy-text",
-          "form-screen-email-template",
-          "end-screen-title",
-          "end-screen-text",
-          "title",
-          "description"
+          "cog-3-mm5-music-table-intro",
+          "cog-3-mm5-music-table-intro-step",
+          "cog-3-mm5-music-table-send-track",
+          "cog-3-mm5-music-table-terms-and-conditions"
         ]
       },
       {
         "id": 1,
         "name": "Text",
         "keys": [
-          "instruction-screen-button-label",
-          "picture-screen-timer-unit",
-          "form-screen-name-default",
-          "form-screen-email-default",
-          "form-screen-email2-default",
-          "form-screen-take-picture-label",
-          "form-screen-send-label",
-          "form-screen-message-box-title",
-          "form-screen-message-box-text",
-          "form-screen-name-var",
-          "form-screen-email-subject",
-          "end-screen-take-picture-label",
-          "end-screen-end-button-label",
-          "id"
+          "title",
+          "button-text",
+          "name-placeholer",
+          "email-placeholer",
+          "send-button-text",
+          "start-over-button-text",
+          "validation-error-title",
+          "validation-done-title",
+          "close-button-text"
         ]
       },
       {
-        "id": 12,
-        "name": "MultipleList",
+        "id": 2,
+        "name": "RichTextArea",
         "keys": [
-          "items"
+          "subtitle",
+          "description",
+          "track-recording-text",
+          "accept-terms-text",
+          "validation-error-body",
+          "validation-done-body"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "List",
+        "keys": [
+          "steps"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "File",
+        "keys": [
+          "icon"
         ]
       }
     ],
@@ -107,16 +81,6 @@
         "id": 2,
         "tag": "en",
         "name": "English"
-      },
-      {
-        "id": 3,
-        "tag": "de",
-        "name": "German"
-      },
-      {
-        "id": 5,
-        "tag": "cs",
-        "name": "Czech"
       }
     ],
     "enumLists": []
@@ -124,402 +88,54 @@
   "styleId": null,
   "screens": [
     {
-      "moduleId": "03768ce9-3006-4ee5-bff6-e184d3c0be40",
-      "key": "kpn-st14-app02-app",
-      "name": "kpn-st14-app02-app",
-      "referenceId": "1a483ea0-7f4f-40ce-8e21-806968e2b929",
+      "moduleId": "516c5523-6920-492a-9658-e9d2d5464241",
+      "key": "cog-3-mm5-music-table-intro",
+      "name": "cog.3.mm5.music-table-intro",
+      "referenceId": "961e274b-bbfe-4faa-9799-16cf53ff656a",
       "subModules": [
         {
-          "moduleType": 13,
-          "key": "screensaver-timeout",
-          "name": "screensaver-timeout",
-          "number": "60"
-        },
-        {
-          "moduleType": 4,
-          "key": "start-screen-bg",
-          "name": "start-screen-bg",
-          "isTranslated": false,
-          "files": "5e090209-99f4-4185-f48a-08db085af54c.jpg"
-        },
-        {
-          "moduleType": 2,
-          "key": "start-screen-title",
-          "name": "start-screen-title",
+          "moduleType": 1,
+          "key": "title",
+          "name": "title",
           "isTranslated": true,
           "text": {
-            "pl": "<p>KABINA<br />\nFOTOGRAFICZNA</p>\n",
-            "en": "<p>[EN]KABINA<br />\nFOTOGRAFICZNA</p>\n",
-            "de": "<p>[de]KABINA<br />\nFOTOGRAFICZNA</p>\n",
-            "cs": "<p>[cz]KABINA<br />\nFOTOGRAFICZNA</p>\n"
+            "pl": "Grający stół",
+            "en": "Music table"
           }
         },
         {
           "moduleType": 2,
-          "key": "start-screen-button-label",
-          "name": "start-screen-button-label",
+          "key": "subtitle",
+          "name": "subtitle",
           "isTranslated": true,
           "text": {
-            "pl": "<p>START</p>\n",
-            "en": "<p>[en]START</p>\n",
-            "de": "<p>[de]START</p>\n",
-            "cs": "<p>[cz]START</p>\n"
+            "pl": "<p>Uł&oacute;ż swoją partyturę, umieszczając znaczniki w otworach rozmieszczonych na stole grającym, i posłuchaj, jaką melodię udało ci się skomponować.</p>\n",
+            "en": "<p>[EN] - Uł&oacute;ż swoją partyturę, umieszczając znaczniki w otworach rozmieszczonych na stole grającym, i posłuchaj, jaką melodię udało ci się skomponować.</p>\n"
           }
         },
         {
-          "moduleType": 4,
-          "key": "instruction-screen-bg",
-          "name": "instruction-screen-bg",
-          "isTranslated": false,
-          "files": "2f4eebe9-d4c6-4f9e-f48b-08db085af54c.jpg"
-        },
-        {
-          "moduleType": 2,
-          "key": "instruction-screen-title",
-          "name": "instruction-screen-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Instruktaż</p>\n",
-            "en": "<p>[en]Instruktaż</p>\n",
-            "de": "<p>[de]Instruktaż</p>\n",
-            "cs": "<p>[cz]Instruktaż</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "instruction-screen-text",
-          "name": "instruction-screen-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>&lt;h2&gt;KROK 1&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 2&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 3&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&nbsp;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n",
-            "en": "<p>&lt;h2&gt;[en]KROK 1&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 2&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 3&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&nbsp;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n",
-            "de": "<p>&lt;h2&gt;[de]KROK 1&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 2&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 3&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&nbsp;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n",
-            "cs": "<p>&lt;h2&gt;[cz]KROK 1&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 2&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&lt;h2&gt;KROK 3&lt;/h2&gt;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n\n<p>&nbsp;</p>\n\n<p>Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem Lorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet loremLorem ipsum dolor somet lorem</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "instruction-screen-button-label",
-          "name": "instruction-screen-button-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "DALEJ",
-            "en": "[en]DALEJ",
-            "de": "[de]DALEJ",
-            "cs": "[cz]DALEJ"
-          }
-        },
-        {
-          "moduleType": 4,
-          "key": "choose-screen-bg",
-          "name": "choose-screen-bg",
-          "isTranslated": false,
-          "files": "5e090209-99f4-4185-f48a-08db085af54c.jpg"
-        },
-        {
-          "moduleType": 2,
-          "key": "choose-screen-title",
-          "name": "choose-screen-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Wybierz interesujący<br />\nCię obraz</p>\n",
-            "en": "<p>[en]Wybierz interesujący<br />\nCię obraz</p>\n",
-            "de": "<p>[de]Wybierz interesujący<br />\nCię obraz</p>\n",
-            "cs": "<p>[cz]Wybierz interesujący<br />\nCię obraz</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "picture-screen-title",
-          "name": "picture-screen-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Dopasuj odpowiednio twarz<br />\nw wycięte pole</p>\n",
-            "en": "<p>[en]Dopasuj odpowiednio twarz<br />\nw wycięte pole</p>\n",
-            "de": "<p>[de]Dopasuj odpowiednio twarz<br />\nw wycięte pole</p>\n",
-            "cs": "<p>[cz]Dopasuj odpowiednio twarz<br />\nw wycięte pole</p>\n"
-          }
-        },
-        {
-          "moduleType": 13,
-          "key": "picture-screen-duration",
-          "name": "picture-screen-duration",
-          "number": "15"
-        },
-        {
-          "moduleType": 1,
-          "key": "picture-screen-timer-unit",
-          "name": "picture-screen-timer-unit",
-          "isTranslated": true,
-          "text": {
-            "pl": "sek",
-            "en": "sec",
-            "de": "sec",
-            "cs": "sec"
-          }
-        },
-        {
-          "moduleType": 4,
-          "key": "form-screen-bg",
-          "name": "form-screen-bg",
-          "isTranslated": false,
-          "files": "5e090209-99f4-4185-f48a-08db085af54c.jpg"
-        },
-        {
-          "moduleType": 2,
-          "key": "form-screen-title",
-          "name": "form-screen-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Wyślij portret<br />\nna pamiątkę</p>\n",
-            "en": "<p>[en]Wyślij portret<br />\nna pamiątkę</p>\n",
-            "de": "<p>[de]Wyślij portret<br />\nna pamiątkę</p>\n",
-            "cs": "<p>[cz]Wyślij portret<br />\nna pamiątkę</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "form-screen-policy-link",
-          "name": "form-screen-policy-link",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Akceptuję &lt;u&gt;&lt;color=#936E4F&gt;REGULAMIN&lt;/u&gt;&lt;/color&gt;</p>\n",
-            "en": "<p>[en]Akceptuję &lt;u&gt;&lt;color=#936E4F&gt;REGULAMIN&lt;/u&gt;&lt;/color&gt;</p>\n",
-            "de": "<p>[de]Akceptuję &lt;u&gt;&lt;color=#936E4F&gt;REGULAMIN&lt;/u&gt;&lt;/color&gt;</p>\n",
-            "cs": "<p>[cz]Akceptuję &lt;u&gt;&lt;color=#936E4F&gt;REGULAMIN&lt;/u&gt;&lt;/color&gt;</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-name-default",
-          "name": "form-screen-name-default",
-          "isTranslated": true,
-          "text": {
-            "pl": "WPISZ SWOJE IMIĘ",
-            "en": "[en]WPISZ SWOJE IMIĘ",
-            "de": "[de]WPISZ SWOJE IMIĘ",
-            "cs": "[cz]WPISZ SWOJE IMIĘ"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-email-default",
-          "name": "form-screen-email-default",
-          "isTranslated": true,
-          "text": {
-            "pl": "WPISZ SWÓJ ADRES EMAIL",
-            "en": "[en]WPISZ SWÓJ ADRES EMAIL",
-            "de": "[de]WPISZ SWÓJ ADRES EMAIL",
-            "cs": "[cz]WPISZ SWÓJ ADRES EMAIL"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-email2-default",
-          "name": "form-screen-email2-default",
-          "isTranslated": true,
-          "text": {
-            "pl": "ALTERNATYWNY ADRES EMAIL",
-            "en": "[en]ALTERNATYWNY ADRES EMAIL",
-            "de": "[de]ALTERNATYWNY ADRES EMAIL",
-            "cs": "[cz]ALTERNATYWNY ADRES EMAIL"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-take-picture-label",
-          "name": "form-screen-take-picture-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "ZRÓB PONOWNIE",
-            "en": "[en]ZRÓB PONOWNIE",
-            "de": "[de]ZRÓB PONOWNIE",
-            "cs": "[cz]ZRÓB PONOWNIE"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-send-label",
-          "name": "form-screen-send-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "WYŚLIJ ZDJĘCIE",
-            "en": "[en]WYŚLIJ ZDJĘCIE",
-            "de": "[de]WYŚLIJ ZDJĘCIE",
-            "cs": "[cz]WYŚLIJ ZDJĘCIE"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "form-screen-policy-title",
-          "name": "form-screen-policy-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>REGULAMIN</p>\n",
-            "en": "<p>[en]REGULAMIN</p>\n",
-            "de": "<p>[de]REGULAMIN</p>\n",
-            "cs": "<p>[cz]REGULAMIN</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "form-screen-policy-text",
-          "name": "form-screen-policy-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>\n",
-            "en": "<p>[en]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>\n",
-            "de": "<p>[de]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>\n",
-            "cs": "<p>[cz]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, conset velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-message-box-title",
-          "name": "form-screen-message-box-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "Coś poszło nie tak...",
-            "en": "[en]Coś poszło nie tak...",
-            "de": "[de]Coś poszło nie tak...",
-            "cs": "[cz]Coś poszło nie tak..."
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-message-box-text",
-          "name": "form-screen-message-box-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "Wypełnij ponownie pola, następnie wyślij wiadomość",
-            "en": "[en]Wypełnij ponownie pola, następnie wyślij wiadomość",
-            "de": "[de]Wypełnij ponownie pola, następnie wyślij wiadomość",
-            "cs": "[cz]Wypełnij ponownie pola, następnie wyślij wiadomość"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-name-var",
-          "name": "form-screen-name-var",
-          "isTranslated": false,
-          "text": "%NAME%"
-        },
-        {
-          "moduleType": 2,
-          "key": "form-screen-email-template",
-          "name": "form-screen-email-template",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>&lt;html&gt;Witaj %NAME%!&lt;/html&gt;</p>\n",
-            "en": "<p>&lt;html&gt;Witaj %NAME%!&lt;/html&gt;</p>\n",
-            "de": "<p>&lt;html&gt;Witaj %NAME%!&lt;/html&gt;</p>\n",
-            "cs": "<p>&lt;html&gt;Witaj %NAME%!&lt;/html&gt;</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-screen-email-subject",
-          "name": "form-screen-email-subject",
-          "isTranslated": true,
-          "text": {
-            "pl": "Zdjęcie",
-            "en": "[en]Zdjęcie",
-            "de": "[de]Zdjęcie",
-            "cs": "[cz]Zdjęcie"
-          }
-        },
-        {
-          "moduleType": 4,
-          "key": "end-screen-bg",
-          "name": "end-screen-bg",
-          "isTranslated": false,
-          "files": "5e090209-99f4-4185-f48a-08db085af54c.jpg"
-        },
-        {
-          "moduleType": 2,
-          "key": "end-screen-title",
-          "name": "end-screen-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>GRATULACJE !</p>\n",
-            "en": "<p>[en]GRATULACJE !</p>\n",
-            "de": "<p>[de]GRATULACJE !</p>\n",
-            "cs": "<p>[cz]GRATULACJE !</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "end-screen-text",
-          "name": "end-screen-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Zdjęcie zostało wysłane</p>\n",
-            "en": "<p>[en]Zdjęcie zostało wysłane</p>\n",
-            "de": "<p>[de]Zdjęcie zostało wysłane</p>\n",
-            "cs": "<p>[cz]Zdjęcie zostało wysłane</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "end-screen-take-picture-label",
-          "name": "end-screen-take-picture-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "ZRÓB PONOWNIE",
-            "en": "[en]ZRÓB PONOWNIE",
-            "de": "[de]ZRÓB PONOWNIE",
-            "cs": "[cz]ZRÓB PONOWNIE"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "end-screen-end-button-label",
-          "name": "end-screen-end-button-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "ZAKOŃCZ",
-            "en": "[en]ZAKOŃCZ",
-            "de": "[de]ZAKOŃCZ",
-            "cs": "[cz]ZAKOŃCZ"
-          }
-        },
-        {
-          "moduleType": 12,
-          "key": "items",
-          "name": "items",
-          "selectedModules": [
-            {
-              "moduleType": 0,
-              "key": "kpn-st14-app02-app-painting",
-              "name": "kpn-st14-app02-app-painting"
-            }
-          ],
+          "moduleType": 5,
+          "key": "steps",
+          "name": "steps",
+          "selectedModule": {
+            "moduleType": 0,
+            "key": "cog-3-mm5-music-table-intro-step",
+            "name": "cog.3.mm5.music-table-intro-step"
+          },
           "list": [
             {
               "moduleType": 0,
-              "key": "kpn-st14-app02-app-painting",
-              "name": "kpn-st14-app02-app-painting",
-              "moduleId": "74b1810e-4b24-4cad-b5e0-b3df50e6bed7",
-              "referenceId": "641e74b0-ee33-46c1-bfe5-dc30477ed836",
+              "key": "cog-3-mm5-music-table-intro-step",
+              "name": "cog.3.mm5.music-table-intro-step",
+              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
+              "referenceId": "3c6d61e8-fd19-4879-992a-745625c09d25",
               "subModules": [
                 {
-                  "moduleType": 1,
-                  "key": "id",
-                  "name": "id",
-                  "isTranslated": false,
-                  "text": "1"
-                },
-                {
-                  "moduleType": 2,
-                  "key": "title",
-                  "name": "title",
+                  "moduleType": 4,
+                  "key": "icon",
+                  "name": "icon",
                   "isTranslated": true,
-                  "text": {
-                    "pl": "<p>Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760</p>\n",
-                    "en": "<p>[en]Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760</p>\n",
-                    "de": "<p>[de]Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760</p>\n",
-                    "cs": "<p>[cz]Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760</p>\n"
-                  }
+                  "files": null
                 },
                 {
                   "moduleType": 2,
@@ -527,53 +143,25 @@
                   "name": "description",
                   "isTranslated": true,
                   "text": {
-                    "pl": "<p>Malarz śląski, Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760<br />\n(obraz ze zbior&oacute;w Muzeum Narodowego we Wrocławiu; fot. Arkadiusz Podstawka)</p>\n",
-                    "en": "<p>[en]Malarz śląski, Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760<br />\n(obraz ze zbior&oacute;w Muzeum Narodowego we Wrocławiu; fot. Arkadiusz Podstawka)</p>\n",
-                    "de": "<p>[de]Malarz śląski, Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760<br />\n(obraz ze zbior&oacute;w Muzeum Narodowego we Wrocławiu; fot. Arkadiusz Podstawka)</p>\n",
-                    "cs": "<p>[cz]Malarz śląski, Dziewczynka z rodu Schaffgotsch&oacute;w, olej na pł&oacute;tnie, ok. 1760<br />\n(obraz ze zbior&oacute;w Muzeum Narodowego we Wrocławiu; fot. Arkadiusz Podstawka)</p>\n"
+                    "pl": "<p><strong>Rozmieść znaczniki</strong> w wybranych punktach odpowiadających za ścieżki instrument&oacute;w perkusyjnych oraz dźwięki pełnej oktawy.</p>\n",
+                    "en": "<p>[en] - <strong>Rozmieść znaczniki</strong> w wybranych punktach odpowiadających za ścieżki instrument&oacute;w perkusyjnych oraz dźwięki pełnej oktawy.</p>\n"
                   }
-                },
-                {
-                  "moduleType": 4,
-                  "key": "thumbnail",
-                  "name": "thumbnail",
-                  "isTranslated": false,
-                  "files": "33bbe2b4-fc58-42ca-f489-08db085af54c.png"
-                },
-                {
-                  "moduleType": 4,
-                  "key": "image",
-                  "name": "image",
-                  "isTranslated": false,
-                  "files": "8790808c-08f4-4527-f48f-08db085af54c.png"
                 }
               ]
             },
             {
               "moduleType": 0,
-              "key": "kpn-st14-app02-app-painting",
-              "name": "kpn-st14-app02-app-painting",
-              "moduleId": "74b1810e-4b24-4cad-b5e0-b3df50e6bed7",
-              "referenceId": "f186ad81-7a93-498b-a435-14891808e89d",
+              "key": "cog-3-mm5-music-table-intro-step",
+              "name": "cog.3.mm5.music-table-intro-step",
+              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
+              "referenceId": "755cba8a-9937-48ca-919a-9228a3c5beff",
               "subModules": [
                 {
-                  "moduleType": 1,
-                  "key": "id",
-                  "name": "id",
-                  "isTranslated": false,
-                  "text": "2"
-                },
-                {
-                  "moduleType": 2,
-                  "key": "title",
-                  "name": "title",
+                  "moduleType": 4,
+                  "key": "icon",
+                  "name": "icon",
                   "isTranslated": true,
-                  "text": {
-                    "pl": "<p>Hans Ulryk Schaffgotsch, olej na pł&oacute;tnie, 1630</p>\n",
-                    "en": "<p>[en]Hans Ulryk Schaffgotsch, olej na pł&oacute;tnie, 1630</p>\n",
-                    "de": "<p>[de]Hans Ulryk Schaffgotsch, olej na pł&oacute;tnie, 1630</p>\n",
-                    "cs": "<p>[cz]Hans Ulryk Schaffgotsch, olej na pł&oacute;tnie, 1630</p>\n"
-                  }
+                  "files": null
                 },
                 {
                   "moduleType": 2,
@@ -581,53 +169,25 @@
                   "name": "description",
                   "isTranslated": true,
                   "text": {
-                    "pl": "<p>Autor nieznany, Portret Hansa Ulryka Schaffgotscha, olej na pł&oacute;tnie, 1630<br />\n(obraz ze zbior&oacute;w Muzeum Nartodowego we Wrocławiu, fot. Arkadiusz Podstawka)</p>\n",
-                    "en": "<p>[en]Autor nieznany, Portret Hansa Ulryka Schaffgotscha, olej na pł&oacute;tnie, 1630<br />\n(obraz ze zbior&oacute;w Muzeum Nartodowego we Wrocławiu, fot. Arkadiusz Podstawka)</p>\n",
-                    "de": "<p>[de]Autor nieznany, Portret Hansa Ulryka Schaffgotscha, olej na pł&oacute;tnie, 1630<br />\n(obraz ze zbior&oacute;w Muzeum Nartodowego we Wrocławiu, fot. Arkadiusz Podstawka)</p>\n",
-                    "cs": "<p>[cz]Autor nieznany, Portret Hansa Ulryka Schaffgotscha, olej na pł&oacute;tnie, 1630<br />\n(obraz ze zbior&oacute;w Muzeum Nartodowego we Wrocławiu, fot. Arkadiusz Podstawka)</p>\n"
+                    "pl": "<p><strong>Korzystając ze słuchawek</strong>, możesz na bieżąco odsłuchiwać dźwięki zeskanowane z podświetlonych punkt&oacute;w.</p>\n",
+                    "en": "<p><strong>Korzystając ze słuchawek</strong>, możesz na bieżąco odsłuchiwać dźwięki zeskanowane z podświetlonych punkt&oacute;w.</p>\n"
                   }
-                },
-                {
-                  "moduleType": 4,
-                  "key": "thumbnail",
-                  "name": "thumbnail",
-                  "isTranslated": false,
-                  "files": "ecc2711e-fc6d-460d-f487-08db085af54c.png"
-                },
-                {
-                  "moduleType": 4,
-                  "key": "image",
-                  "name": "image",
-                  "isTranslated": false,
-                  "files": "5b14e978-5089-4145-f48e-08db085af54c.png"
                 }
               ]
             },
             {
               "moduleType": 0,
-              "key": "kpn-st14-app02-app-painting",
-              "name": "kpn-st14-app02-app-painting",
-              "moduleId": "74b1810e-4b24-4cad-b5e0-b3df50e6bed7",
-              "referenceId": "c278ddb9-1a6a-41f1-8934-116b249ec0c3",
+              "key": "cog-3-mm5-music-table-intro-step",
+              "name": "cog.3.mm5.music-table-intro-step",
+              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
+              "referenceId": "5e3a357e-2595-4cdf-a627-6c278a96ade0",
               "subModules": [
                 {
-                  "moduleType": 1,
-                  "key": "id",
-                  "name": "id",
-                  "isTranslated": false,
-                  "text": "3"
-                },
-                {
-                  "moduleType": 2,
-                  "key": "title",
-                  "name": "title",
+                  "moduleType": 4,
+                  "key": "icon",
+                  "name": "icon",
                   "isTranslated": true,
-                  "text": {
-                    "pl": "<p>Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707</p>\n",
-                    "en": "<p>[en]Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707</p>\n",
-                    "de": "<p>[de]Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707</p>\n",
-                    "cs": "<p>[cz]Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707</p>\n"
-                  }
+                  "files": null
                 },
                 {
                   "moduleType": 2,
@@ -635,53 +195,25 @@
                   "name": "description",
                   "isTranslated": true,
                   "text": {
-                    "pl": "<p>Anonimowy malarz śląski, Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707<br />\n(ze zbior&oacute;w Muzeum Piast&oacute;w Śląskich w Brzegu, fot. Muzeum Piast&oacute;w Śląskich w Brzegu)</p>\n",
-                    "en": "<p>[en]Anonimowy malarz śląski, Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707<br />\n(ze zbior&oacute;w Muzeum Piast&oacute;w Śląskich w Brzegu, fot. Muzeum Piast&oacute;w Śląskich w Brzegu)</p>\n",
-                    "de": "<p>[de]Anonimowy malarz śląski, Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707<br />\n(ze zbior&oacute;w Muzeum Piast&oacute;w Śląskich w Brzegu, fot. Muzeum Piast&oacute;w Śląskich w Brzegu)</p>\n",
-                    "cs": "<p>[cz]Anonimowy malarz śląski, Jan Antoni Schaffgotsch w czasach młodzieńczych, olej na pł&oacute;tnie, 1707<br />\n(ze zbior&oacute;w Muzeum Piast&oacute;w Śląskich w Brzegu, fot. Muzeum Piast&oacute;w Śląskich w Brzegu)</p>\n"
+                    "pl": "<p><strong>Dopasuj tempo utworu,</strong> używając pokrętła.</p>\n",
+                    "en": "<p><strong>Dopasuj tempo utworu,</strong> używając pokrętła.</p>\n"
                   }
-                },
-                {
-                  "moduleType": 4,
-                  "key": "thumbnail",
-                  "name": "thumbnail",
-                  "isTranslated": false,
-                  "files": "d7ea1fcc-d52f-4869-f488-08db085af54c.png"
-                },
-                {
-                  "moduleType": 4,
-                  "key": "image",
-                  "name": "image",
-                  "isTranslated": false,
-                  "files": "35b184fd-7266-42bc-f48c-08db085af54c.png"
                 }
               ]
             },
             {
               "moduleType": 0,
-              "key": "kpn-st14-app02-app-painting",
-              "name": "kpn-st14-app02-app-painting",
-              "moduleId": "74b1810e-4b24-4cad-b5e0-b3df50e6bed7",
-              "referenceId": "ef6c0751-138d-48d1-ba39-14c21fd478b2",
+              "key": "cog-3-mm5-music-table-intro-step",
+              "name": "cog.3.mm5.music-table-intro-step",
+              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
+              "referenceId": "a24f71c3-69a4-4afe-bc3f-1ef785ccbec7",
               "subModules": [
                 {
-                  "moduleType": 1,
-                  "key": "id",
-                  "name": "id",
-                  "isTranslated": false,
-                  "text": "4"
-                },
-                {
-                  "moduleType": 2,
-                  "key": "title",
-                  "name": "title",
+                  "moduleType": 4,
+                  "key": "icon",
+                  "name": "icon",
                   "isTranslated": true,
-                  "text": {
-                    "pl": "<p>Maria Teresa Schaffgotsch, olej na pł&oacute;tnie, b.r.</p>\n",
-                    "en": "<p>[en]Maria Teresa Schaffgotsch, olej na pł&oacute;tnie, b.r.</p>\n",
-                    "de": "<p>[de]Maria Teresa Schaffgotsch, olej na pł&oacute;tnie, b.r.</p>\n",
-                    "cs": "<p>[cz]Maria Teresa Schaffgotsch, olej na pł&oacute;tnie, b.r.</p>\n"
-                  }
+                  "files": null
                 },
                 {
                   "moduleType": 2,
@@ -689,33 +221,191 @@
                   "name": "description",
                   "isTranslated": true,
                   "text": {
-                    "pl": "<p>Autor nieznany, Portret Marii Teresy Schaffgotsch, olej na pł&oacute;tnie, b.r.<br />\n(obraz ze zbior&oacute;w Muzeum Sztuki w Łodzi, fot. Muzeum Sztuki w Łodzi)</p>\n",
-                    "en": "<p>[en]Autor nieznany, Portret Marii Teresy Schaffgotsch, olej na pł&oacute;tnie, b.r.<br />\n(obraz ze zbior&oacute;w Muzeum Sztuki w Łodzi, fot. Muzeum Sztuki w Łodzi)</p>\n",
-                    "de": "<p>[de]Autor nieznany, Portret Marii Teresy Schaffgotsch, olej na pł&oacute;tnie, b.r.<br />\n(obraz ze zbior&oacute;w Muzeum Sztuki w Łodzi, fot. Muzeum Sztuki w Łodzi)</p>\n",
-                    "cs": "<p>[cz]Autor nieznany, Portret Marii Teresy Schaffgotsch, olej na pł&oacute;tnie, b.r.<br />\n(obraz ze zbior&oacute;w Muzeum Sztuki w Łodzi, fot. Muzeum Sztuki w Łodzi)</p>\n"
+                    "pl": "<p><strong>Zapisz swoją kompozycję i wyślij ją</strong> na wybrany adres e-mail.</p>\n",
+                    "en": "<p>[en] <strong>Zapisz swoją kompozycję i wyślij ją</strong> na wybrany adres e-mail.</p>\n"
                   }
-                },
-                {
-                  "moduleType": 4,
-                  "key": "thumbnail",
-                  "name": "thumbnail",
-                  "isTranslated": false,
-                  "files": "adeff62a-8839-41f9-f486-08db085af54c.png"
-                },
-                {
-                  "moduleType": 4,
-                  "key": "image",
-                  "name": "image",
-                  "isTranslated": false,
-                  "files": "c14bd2c2-924b-4097-f48d-08db085af54c.png"
                 }
               ]
             }
           ]
+        },
+        {
+          "moduleType": 1,
+          "key": "button-text",
+          "name": "button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "ZAPISZ UTWÓR",
+            "en": "SAVE TRACK"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "track-recording-text",
+          "name": "track-recording-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p><strong>Tw&oacute;j utw&oacute;r</strong> jest </br> przetwarzany</p>\n",
+            "en": "<p>[EN] -&nbsp;<strong>Tw&oacute;j utw&oacute;r</strong> jest </br> przetwarzany</p>\n"
+          }
+        }
+      ]
+    },
+    {
+      "moduleId": "21761c83-d85c-4a66-9cfc-720c134fbfc6",
+      "key": "cog-3-mm5-music-table-send-track",
+      "name": "cog.3.mm5.music-table-send-track",
+      "referenceId": "fb49daf0-dc55-480d-aaf3-bd829a6c6f26",
+      "subModules": [
+        {
+          "moduleType": 1,
+          "key": "title",
+          "name": "title",
+          "isTranslated": true,
+          "text": {
+            "pl": "Wyślij kompozycję",
+            "en": "[en] Wyślij kompozycję"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "name-placeholer",
+          "name": "name-placeholer",
+          "isTranslated": true,
+          "text": {
+            "pl": "WPISZ IMIĘ",
+            "en": "[EN] - WPISZ IMIĘ"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "email-placeholer",
+          "name": "email-placeholer",
+          "isTranslated": true,
+          "text": {
+            "pl": "WPISZ ADRES E-MAIL",
+            "en": "[EN] - WPISZ ADRES E-MAIL"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "accept-terms-text",
+          "name": "accept-terms-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Akceptuję <u>REGULAMIN</u></p>\n",
+            "en": "<p>[EN] Akceptuję <u>REGULAMIN</u></p>\n"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "send-button-text",
+          "name": "send-button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "WYŚLIJ",
+            "en": "SEND"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "start-over-button-text",
+          "name": "start-over-button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "ZACZNIJ OD NOWA",
+            "en": "START OVER"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "validation-error-title",
+          "name": "validation-error-title",
+          "isTranslated": true,
+          "text": {
+            "pl": "Wystąpił błąd",
+            "en": "[EN] - Wystąpił błąd"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "validation-error-body",
+          "name": "validation-error-body",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Upewnij się, czy pola zostały wypełnione poprawnie i czy regulamin został zaakceptowany.&nbsp;</p>\n",
+            "en": "<p>[EN] -&nbsp;Upewnij się, czy pola zostały wypełnione poprawnie i czy regulamin został zaakceptowany.&nbsp;</p>\n"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "validation-done-title",
+          "name": "validation-done-title",
+          "isTranslated": true,
+          "text": {
+            "pl": "Twoja kompozycja muzyczna",
+            "en": "[EN] - Twoja kompozycja muzyczna"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "validation-done-body",
+          "name": "validation-done-body",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>została wysłana pod wskazany adres e-mail.</p>\n",
+            "en": "<p>[en] została wysłana pod wskazany adres e-mail.</p>\n"
+          }
+        },
+        {
+          "moduleType": 4,
+          "key": "image",
+          "name": "image",
+          "isTranslated": false,
+          "files": "file.png"
         }
       ]
     }
   ],
   "screensavers": null,
-  "globalPopups": null
+  "globalPopups": [
+    {
+      "moduleId": "87c544e8-d3f6-4035-892a-9b7767749dc4",
+      "key": "cog-3-mm5-music-table-terms-and-conditions",
+      "name": "cog.3.mm5.music-table-terms-and-conditions",
+      "referenceId": "0fc5b527-3614-4be7-9959-e8cf236fb54d",
+      "subModules": [
+        {
+          "moduleType": 1,
+          "key": "title",
+          "name": "title",
+          "isTranslated": true,
+          "text": {
+            "pl": "Regulamin",
+            "en": "terms and conditions"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "description",
+          "name": "description",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+            "en": "<p>[EN]&nbsp;</p>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "close-button-text",
+          "name": "close-button-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "Zamknij",
+            "en": "Close"
+          }
+        }
+      ]
+    }
+  ]
 }

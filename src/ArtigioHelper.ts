@@ -1,17 +1,18 @@
 import { List, Screen, SubModule } from './ArtigioModel';
 
-const prepareModelElement = (artigioModule: Screen, lang: string) => {
+const prepareModelElement = (artigioModule: Screen, lang: string, assetsPath: string | null = null) => {
   let result = {};
+
   artigioModule.subModules.forEach((item: SubModule, idx: number) => {
-    let valueByModuleType = ArtigioHelper.getValueBySubmodule(item, lang);
+    let valueByModuleType = ArtigioHelper.getValueBySubmodule(item, lang, assetsPath);
     if (item.moduleType === 0 && valueByModuleType) {
       const fakeList = valueByModuleType as List;
-      valueByModuleType = prepareModelElement(fakeList, item.key);
+      valueByModuleType = prepareModelElement(fakeList, item.key, assetsPath);
     }
     if ((item.moduleType === 5 || item.moduleType === 12) && valueByModuleType instanceof Array<List>) {
       let arrayResult: any[] = [];
       valueByModuleType.forEach((itemList: any) => {
-        arrayResult = [...arrayResult, prepareModelElement(itemList, lang)];
+        arrayResult = [...arrayResult, prepareModelElement(itemList, lang, assetsPath)];
       });
       valueByModuleType = arrayResult;
     }
@@ -26,7 +27,7 @@ const prepareModelElement = (artigioModule: Screen, lang: string) => {
   return result;
 };
 
-const getValueBySubmodule = (subModule: SubModule, lang: string) => {
+const getValueBySubmodule = (subModule: SubModule, lang: string, assetsPath: string | null = null) => {
   switch (subModule.moduleType) {
     case 0:
       return subModule ? subModule : null;
@@ -40,9 +41,16 @@ const getValueBySubmodule = (subModule: SubModule, lang: string) => {
         value: subModule.selectedValue ? subModule.selectedValue : null,
       };
     case 4:
-      return subModule.files ? (subModule.isTranslated ? subModule.files[lang] : subModule.files) : '';
+      const filePath = subModule.files ? (subModule.isTranslated ? subModule.files[lang] : subModule.files) : '';
+      if (filePath) {
+        return assetsPath ? assetsPath + filePath : filePath;
+      } else {
+        return filePath;
+      }
     case 5:
       return subModule.list as List[];
+    case 10:
+      return subModule.color;
     case 11:
       return subModule.checked;
     case 12:

@@ -70,6 +70,7 @@ export type SubModule = {
   number?: string;
   files?: Files;
   list?: List[];
+  color?: string;
   subModules?: SubModule[];
   referenceId?: string;
 };

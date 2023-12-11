@@ -5,7 +5,11 @@ const getJsonFile = () => {
   return JSON.parse(data);
 };
 
-const parser = new ArtigioParser({ dataJson: getJsonFile(), keyPrefix: 'kpn-st14-app02-' });
+const parser = new ArtigioParser({
+  dataJson: getJsonFile(),
+  keyPrefix: 'cog-3-mm5-music-table-',
+  assetsPath: 'C:\\tata\\',
+});
 
 test('Change language GOOD', () => {
   expect(parser.changeLanguage('pl')).toBe(true);
@@ -16,7 +20,7 @@ test('Change Language BAD', () => {
 });
 
 test('Get Data By Default Language', () => {
-  expect(parser.getScreenDataByCurrentLang('app', true)).toBeInstanceOf(Object);
+  expect(parser.getScreenDataByCurrentLang('intro', true)).toBeInstanceOf(Object);
 });
 
 test('Get lanugage list', () => {
@@ -38,5 +42,18 @@ test('Get bad screen data', () => {
     expect(true).toBe(false);
   } catch (error: any) {
     expect(error.message).toBe('screen-is-not-found');
+  }
+});
+
+test('Get GlobalPopup Data Done', () => {
+  expect(parser.getAllLangPopupData('terms-and-conditions', true)).toBeInstanceOf(Object);
+});
+
+test('Get GlobalPopup Data bad', () => {
+  try {
+    parser.getAllLangPopupData('intro', true);
+    expect(true).toBe(false);
+  } catch (error: any) {
+    expect(error.message).toBe('popup-is-not-found');
   }
 });

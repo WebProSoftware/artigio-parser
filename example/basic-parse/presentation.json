@@ -1,20 +1,25 @@
-{
+ {
   "translations": [],
   "presentationSettings": {
-    "presentationId": "8b5014ec-58b9-40b3-a4bf-b33a71066de7",
-    "key": "cog-3-mm5-music-table",
-    "name": "cog.3.mm5.music-table",
+    "presentationId": "1d3fbd9c-62a0-4334-a91c-fe605563a732",
+    "key": "baj-interactive-fun",
+    "name": "BAJ.interactive-fun",
     "defaultLanguage": {
       "name": "Polish",
       "value": 1,
       "tag": "pl"
     },
-    "mediaPath": null,
-    "shouldIncludeMediaPath": false,
+    "mediaPath": "/content/",
+    "shouldIncludeMediaPath": true,
     "stylePath": "presentation.css",
     "resolution": {
       "width": 1920,
       "height": 1080
+    },
+    "hilight": {
+      "id": 1,
+      "label": "Ekran 1",
+      "description": "Sala 1"
     }
   },
   "dictionaries": {
@@ -23,51 +28,90 @@
         "id": 0,
         "name": "Custom",
         "keys": [
-          "cog-3-mm5-music-table-intro",
-          "cog-3-mm5-music-table-intro-step",
-          "cog-3-mm5-music-table-send-track",
-          "cog-3-mm5-music-table-terms-and-conditions"
-        ]
-      },
-      {
-        "id": 1,
-        "name": "Text",
-        "keys": [
-          "title",
-          "button-text",
-          "name-placeholer",
-          "email-placeholer",
-          "send-button-text",
-          "start-over-button-text",
-          "validation-error-title",
-          "validation-done-title",
-          "close-button-text"
+          "baj-interactive-fun-elements",
+          "baj-interactive-fun-guide-options",
+          "baj-interactive-fun-gamification",
+          "baj-interactive-fun-step",
+          "baj-interactive-fun-step-instruction",
+          "baj-interactive-fun-step-selection-item",
+          "baj-interactive-fun-step-guide-text",
+          "baj-interactive-fun-step-preview",
+          "baj-interactive-fun-step-outro"
         ]
       },
       {
         "id": 2,
         "name": "RichTextArea",
         "keys": [
-          "subtitle",
+          "screensaver-create-yours-movie-text",
+          "button-next-text",
+          "button-end-text",
+          "unprintable-text",
+          "scan-card-title",
+          "scan-card-subtitle",
+          "scan-card-ok",
+          "scan-card-error-profile-is-exist",
+          "scan-card-error-profile-bad-order",
+          "scan-card-error-internal",
+          "finish-step-1-text",
+          "finish-step-2-text",
           "description",
-          "track-recording-text",
-          "accept-terms-text",
-          "validation-error-body",
-          "validation-done-body"
+          "display-name",
+          "text"
         ]
       },
       {
-        "id": 5,
-        "name": "List",
+        "id": 1,
+        "name": "Text",
         "keys": [
-          "steps"
+          "guide-choose-text-title",
+          "form-title-label",
+          "form-director-label",
+          "not-elected-text",
+          "name",
+          "screensaver-title-step",
+          "title",
+          "gamification-tag",
+          "label"
         ]
       },
       {
         "id": 4,
         "name": "File",
         "keys": [
-          "icon"
+          "logo",
+          "finish-step-1-icon",
+          "finish-step-2-icon",
+          "avatar-1",
+          "avatar-2",
+          "not-elected-icon",
+          "icon",
+          "preview-image",
+          "file"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "List",
+        "keys": [
+          "steps",
+          "selection-items",
+          "guide-texts",
+          "preview-elements"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Number",
+        "keys": [
+          "step-id"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Enum",
+        "keys": [
+          "type"
         ]
       }
     ],
@@ -83,329 +127,578 @@
         "name": "English"
       }
     ],
-    "enumLists": []
+    "enumLists": [
+      {
+        "key": "type",
+        "name": "type",
+        "enums": [
+          "selected-primary",
+          "selected-secondary",
+          "after-selecting",
+          "instruction",
+          "form-alert"
+        ]
+      }
+    ]
   },
   "styleId": null,
   "screens": [
     {
-      "moduleId": "516c5523-6920-492a-9658-e9d2d5464241",
-      "key": "cog-3-mm5-music-table-intro",
-      "name": "cog.3.mm5.music-table-intro",
-      "referenceId": "961e274b-bbfe-4faa-9799-16cf53ff656a",
+      "moduleId": "b9e46722-f63b-40cc-9f85-380fc62c1d6f",
+      "key": "baj-interactive-fun-elements",
+      "name": "baj.interactive-fun.elements",
+      "referenceId": "85c2e91e-ea55-4872-8c55-f83a232bc574",
       "subModules": [
         {
-          "moduleType": 1,
-          "key": "title",
-          "name": "title",
+          "moduleType": 2,
+          "key": "screensaver-create-yours-movie-text",
+          "name": "screensaver-create-yours-movie-text",
           "isTranslated": true,
           "text": {
-            "pl": "Grający stół",
-            "en": "Music table"
+            "pl": "<p>stw&oacute;rz<br />\nwłasny film</p>\n",
+            "en": "<p>create<br />\nown movie</p>\n"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "guide-choose-text-title",
+          "name": "guide-choose-text-title",
+          "isTranslated": true,
+          "text": {
+            "pl": "wybierz swojego asystenta",
+            "en": "choose your assistant"
           }
         },
         {
           "moduleType": 2,
-          "key": "subtitle",
-          "name": "subtitle",
+          "key": "button-next-text",
+          "name": "button-next-text",
           "isTranslated": true,
           "text": {
-            "pl": "<p>Uł&oacute;ż swoją partyturę, umieszczając znaczniki w otworach rozmieszczonych na stole grającym, i posłuchaj, jaką melodię udało ci się skomponować.</p>\n",
-            "en": "<p>[EN] - Uł&oacute;ż swoją partyturę, umieszczając znaczniki w otworach rozmieszczonych na stole grającym, i posłuchaj, jaką melodię udało ci się skomponować.</p>\n"
+            "pl": "<p>Dalej</p>\n",
+            "en": "<p>Next</p>\n"
           }
         },
+        {
+          "moduleType": 2,
+          "key": "button-end-text",
+          "name": "button-end-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Zakończ</p>\n",
+            "en": "<p>Finish</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "unprintable-text",
+          "name": "unprintable-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>niecenzuralny wyraz</p>\n",
+            "en": "<p>obscene expression</p>\n"
+          }
+        },
+        {
+          "moduleType": 4,
+          "key": "logo",
+          "name": "logo",
+          "isTranslated": false,
+          "files": "/content/"
+        },
+        {
+          "moduleType": 1,
+          "key": "form-title-label",
+          "name": "form-title-label",
+          "isTranslated": true,
+          "text": {
+            "pl": "Tytuł",
+            "en": "Title"
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "form-director-label",
+          "name": "form-director-label",
+          "isTranslated": true,
+          "text": {
+            "pl": "Reżyseria",
+            "en": "Direction"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "scan-card-title",
+          "name": "scan-card-title",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p><strong>zeskanuj kartę,</strong><br />\n&nbsp;</p>\n",
+            "en": "<p><strong>scan the card,</strong></p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "scan-card-subtitle",
+          "name": "scan-card-subtitle",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>aby rozpocząć podr&oacute;ż</p>\n",
+            "en": "<p>to start the journey</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "scan-card-ok",
+          "name": "scan-card-ok",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Gotowe. Zaczynamy!&nbsp;</p>\n",
+            "en": "<p>Ready. Here we go!</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "scan-card-error-profile-is-exist",
+          "name": "scan-card-error-profile-is-exist",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Już tu byłeś. Ruszaj dalej!&nbsp;</p>\n",
+            "en": "<p>You&#39;ve been here before. Keep moving!</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "scan-card-error-profile-bad-order",
+          "name": "scan-card-error-profile-bad-order",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Ups! Pominąłeś stanowisko. Zawr&oacute;ć.&nbsp;</p>\n",
+            "en": "<p>Oops! You missed the position. Turn around.</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "scan-card-error-internal",
+          "name": "scan-card-error-internal",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Błąd systemowy&nbsp;</p>\n",
+            "en": "<p>System error</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "finish-step-1-text",
+          "name": "finish-step-1-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p><strong>zeskanuj kod qr</strong></p>\n\n<p>aby wejść na stronę i założyć konto</p>\n",
+            "en": "<p><strong>scan the qr code</strong></p>\n\n<p>to enter the website and create an account</p>\n"
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "finish-step-2-text",
+          "name": "finish-step-2-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p><strong>zał&oacute;ż konto</strong></p>\n\n<p>użyj kodu z karty reżysera</p>\n",
+            "en": "<p><strong>Create an account</strong></p>\n\n<p>use the code from the director&#39;s card</p>\n"
+          }
+        },
+        {
+          "moduleType": 4,
+          "key": "finish-step-1-icon",
+          "name": "finish-step-1-icon",
+          "isTranslated": false,
+          "files": "/content/6b2ca680-881b-48b6-9e15-08dc390b0bcb.png"
+        },
+        {
+          "moduleType": 4,
+          "key": "finish-step-2-icon",
+          "name": "finish-step-2-icon",
+          "isTranslated": false,
+          "files": "/content/f81517f8-917d-430b-9e16-08dc390b0bcb.png"
+        }
+      ]
+    },
+    {
+      "moduleId": "5d16affb-7d58-466d-a24d-826af74bee9c",
+      "key": "baj-interactive-fun-guide-options",
+      "name": "baj.interactive-fun.guide-options",
+      "referenceId": "0bb329b0-d6f0-4529-b9d5-494baae7687b",
+      "subModules": [
+        {
+          "moduleType": 4,
+          "key": "avatar-1",
+          "name": "avatar-1",
+          "isTranslated": false,
+          "files": "/content/8bffb043-e58c-47a3-9e10-08dc390b0bcb.png"
+        },
+        {
+          "moduleType": 4,
+          "key": "avatar-2",
+          "name": "avatar-2",
+          "isTranslated": false,
+          "files": "/content/03936c66-770b-45fe-9e11-08dc390b0bcb.png"
+        },
+        {
+          "moduleType": 4,
+          "key": "not-elected-icon",
+          "name": "not-elected-icon",
+          "isTranslated": false,
+          "files": "/content/32678474-b643-451c-9e14-08dc390b0bcb.png"
+        },
+        {
+          "moduleType": 1,
+          "key": "not-elected-text",
+          "name": "not-elected-text",
+          "isTranslated": true,
+          "text": {
+            "pl": "instrukcja",
+            "en": "instruction"
+          }
+        }
+      ]
+    },
+    {
+      "moduleId": "4c780480-72d9-4692-9001-3d44b20792e8",
+      "key": "baj-interactive-fun-gamification",
+      "name": "baj.interactive-fun.gamification",
+      "referenceId": "5c066823-94fa-4a15-ae74-ee912ea62d7a",
+      "subModules": [
         {
           "moduleType": 5,
           "key": "steps",
           "name": "steps",
           "selectedModule": {
             "moduleType": 0,
-            "key": "cog-3-mm5-music-table-intro-step",
-            "name": "cog.3.mm5.music-table-intro-step"
+            "key": "baj-interactive-fun-step",
+            "name": "baj.interactive-fun.step"
           },
           "list": [
             {
               "moduleType": 0,
-              "key": "cog-3-mm5-music-table-intro-step",
-              "name": "cog.3.mm5.music-table-intro-step",
-              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
-              "referenceId": "3c6d61e8-fd19-4879-992a-745625c09d25",
+              "key": "baj-interactive-fun-step",
+              "name": "baj.interactive-fun.step",
+              "moduleId": "d9fcb958-c9a9-40a0-9e49-1cc3c2ebfa75",
+              "referenceId": "0ddda6a5-51d6-499d-bb16-54d546c2d3ab",
               "subModules": [
                 {
-                  "moduleType": 4,
-                  "key": "icon",
-                  "name": "icon",
-                  "isTranslated": true,
-                  "files": null
+                  "moduleType": 13,
+                  "key": "step-id",
+                  "name": "step-id",
+                  "number": "1"
                 },
                 {
-                  "moduleType": 2,
-                  "key": "description",
-                  "name": "description",
-                  "isTranslated": true,
-                  "text": {
-                    "pl": "<p><strong>Rozmieść znaczniki</strong> w wybranych punktach odpowiadających za ścieżki instrument&oacute;w perkusyjnych oraz dźwięki pełnej oktawy.</p>\n",
-                    "en": "<p>[en] - <strong>Rozmieść znaczniki</strong> w wybranych punktach odpowiadających za ścieżki instrument&oacute;w perkusyjnych oraz dźwięki pełnej oktawy.</p>\n"
-                  }
-                }
-              ]
-            },
-            {
-              "moduleType": 0,
-              "key": "cog-3-mm5-music-table-intro-step",
-              "name": "cog.3.mm5.music-table-intro-step",
-              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
-              "referenceId": "755cba8a-9937-48ca-919a-9228a3c5beff",
-              "subModules": [
-                {
-                  "moduleType": 4,
-                  "key": "icon",
-                  "name": "icon",
-                  "isTranslated": true,
-                  "files": null
+                  "moduleType": 1,
+                  "key": "name",
+                  "name": "name",
+                  "isTranslated": false,
+                  "text": "Wybór przewodnika"
                 },
                 {
-                  "moduleType": 2,
-                  "key": "description",
-                  "name": "description",
+                  "moduleType": 1,
+                  "key": "screensaver-title-step",
+                  "name": "screensaver-title-step",
                   "isTranslated": true,
                   "text": {
-                    "pl": "<p><strong>Korzystając ze słuchawek</strong>, możesz na bieżąco odsłuchiwać dźwięki zeskanowane z podświetlonych punkt&oacute;w.</p>\n",
-                    "en": "<p><strong>Korzystając ze słuchawek</strong>, możesz na bieżąco odsłuchiwać dźwięki zeskanowane z podświetlonych punkt&oacute;w.</p>\n"
+                    "pl": "zostań reżyserem animacji!",
+                    "en": "become an animation director!"
                   }
-                }
-              ]
-            },
-            {
-              "moduleType": 0,
-              "key": "cog-3-mm5-music-table-intro-step",
-              "name": "cog.3.mm5.music-table-intro-step",
-              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
-              "referenceId": "5e3a357e-2595-4cdf-a627-6c278a96ade0",
-              "subModules": [
-                {
-                  "moduleType": 4,
-                  "key": "icon",
-                  "name": "icon",
-                  "isTranslated": true,
-                  "files": null
                 },
                 {
-                  "moduleType": 2,
-                  "key": "description",
-                  "name": "description",
-                  "isTranslated": true,
-                  "text": {
-                    "pl": "<p><strong>Dopasuj tempo utworu,</strong> używając pokrętła.</p>\n",
-                    "en": "<p><strong>Dopasuj tempo utworu,</strong> używając pokrętła.</p>\n"
-                  }
-                }
-              ]
-            },
-            {
-              "moduleType": 0,
-              "key": "cog-3-mm5-music-table-intro-step",
-              "name": "cog.3.mm5.music-table-intro-step",
-              "moduleId": "d9e9ddfb-d2c1-4db1-84b1-765eabd9d767",
-              "referenceId": "a24f71c3-69a4-4afe-bc3f-1ef785ccbec7",
-              "subModules": [
-                {
-                  "moduleType": 4,
-                  "key": "icon",
-                  "name": "icon",
-                  "isTranslated": true,
-                  "files": null
+                  "moduleType": 0,
+                  "key": "baj-interactive-fun-step-instruction",
+                  "name": "baj.interactive-fun.step.instruction",
+                  "moduleId": "e339c057-f950-441c-a9cf-5f869212dd8e",
+                  "referenceId": "64cced88-08c2-40b7-aca9-17989b710292",
+                  "subModules": [
+                    {
+                      "moduleType": 1,
+                      "key": "title",
+                      "name": "title",
+                      "isTranslated": true,
+                      "text": {
+                        "pl": "zostań reżyserem animacji!",
+                        "en": "zostań reżyserem animacji!"
+                      }
+                    },
+                    {
+                      "moduleType": 2,
+                      "key": "description",
+                      "name": "description",
+                      "isTranslated": true,
+                      "text": {
+                        "pl": "<p>Reżyser naszego Studia, Ryszard Rysik, zniknął miesiąc temu w niewyjaśnionych okolicznościach. Pozostawił po sobie projekty i plany &ndash; elementy trzeba jednak złożyć w całość, by powstała kompletna animacja. Termin premiery wyznaczono na dziś! Zostań reżyserem i z pomocą bohater&oacute;w Warzywnego Biuro Śledczego ukończ film na czas!</p>\n\n<p><strong>Kamera! Akcja!</strong></p>\n",
+                        "en": "<p>The director of our Studio, Ryszard Rysik, disappeared a month ago in unexplained circumstances. He left behind designs and plans - but the elements must be put together to create a complete animation. The premiere date is set for today! Become a director and, with the help of the heroes of the Vegetable Investigation Bureau, complete the film on time!</p>\n\n<p><strong>Camera! Share!</strong></p>\n"
+                      }
+                    },
+                    {
+                      "moduleType": 4,
+                      "key": "icon",
+                      "name": "icon",
+                      "isTranslated": false,
+                      "files": null
+                    }
+                  ]
                 },
                 {
-                  "moduleType": 2,
-                  "key": "description",
-                  "name": "description",
-                  "isTranslated": true,
-                  "text": {
-                    "pl": "<p><strong>Zapisz swoją kompozycję i wyślij ją</strong> na wybrany adres e-mail.</p>\n",
-                    "en": "<p>[en] <strong>Zapisz swoją kompozycję i wyślij ją</strong> na wybrany adres e-mail.</p>\n"
-                  }
+                  "moduleType": 5,
+                  "key": "selection-items",
+                  "name": "selection-items",
+                  "selectedModule": {
+                    "moduleType": 0,
+                    "key": "baj-interactive-fun-step-selection-item",
+                    "name": "baj.interactive-fun.step.selection-item"
+                  },
+                  "list": [
+                    {
+                      "moduleType": 0,
+                      "key": "baj-interactive-fun-step-selection-item",
+                      "name": "baj.interactive-fun.step.selection-item",
+                      "moduleId": "8aadf8ae-39fb-4eaa-aab6-c8fdf85da406",
+                      "referenceId": "9f94b950-fd2a-478b-9726-e4a3c600b563",
+                      "subModules": [
+                        {
+                          "moduleType": 2,
+                          "key": "display-name",
+                          "name": "display-name",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>syriusz pieprz</p>\n",
+                            "en": "<p>syriusz pieprz</p>\n"
+                          }
+                        },
+                        {
+                          "moduleType": 1,
+                          "key": "gamification-tag",
+                          "name": "gamification-tag",
+                          "isTranslated": false,
+                          "text": "G_1"
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "preview-image",
+                          "name": "preview-image",
+                          "isTranslated": false,
+                          "files": "/content/8bffb043-e58c-47a3-9e10-08dc390b0bcb.png"
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "baj-interactive-fun-step-selection-item",
+                      "name": "baj.interactive-fun.step.selection-item",
+                      "moduleId": "8aadf8ae-39fb-4eaa-aab6-c8fdf85da406",
+                      "referenceId": "d498c076-9e33-4549-81f2-13e0fc95acb1",
+                      "subModules": [
+                        {
+                          "moduleType": 2,
+                          "key": "display-name",
+                          "name": "display-name",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>lilia wanilia</p>\n",
+                            "en": "<p>lilia wanilia</p>\n"
+                          }
+                        },
+                        {
+                          "moduleType": 1,
+                          "key": "gamification-tag",
+                          "name": "gamification-tag",
+                          "isTranslated": false,
+                          "text": "G_2"
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "preview-image",
+                          "name": "preview-image",
+                          "isTranslated": false,
+                          "files": "/content/03936c66-770b-45fe-9e11-08dc390b0bcb.png"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "moduleType": 5,
+                  "key": "guide-texts",
+                  "name": "guide-texts",
+                  "selectedModule": {
+                    "moduleType": 0,
+                    "key": "baj-interactive-fun-step-guide-text",
+                    "name": "baj.interactive-fun.step.guide-text"
+                  },
+                  "list": [
+                    {
+                      "moduleType": 0,
+                      "key": "baj-interactive-fun-step-guide-text",
+                      "name": "baj.interactive-fun.step.guide-text",
+                      "moduleId": "aa331b35-7c70-4ae4-8caf-ed6abd332c7f",
+                      "referenceId": "08b5217c-21c9-49dc-badf-5ccf237d7225",
+                      "subModules": [
+                        {
+                          "moduleType": 3,
+                          "key": "type",
+                          "name": "type",
+                          "selectedIndex": 3,
+                          "selectedValue": "instruction"
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>Z notatek Ryszarda Rysika: &nbsp;<br />\nHistoria dzieje się w Bielsku i jego okolicach. Znajduje się tutaj magiczna Kropla Życia, kt&oacute;ra zasila miasto i sąsiednie lasy. Dzięki niej przyroda rozwija się, a mieszkańcy wiodą szczęśliwe życie...</p>\n",
+                            "en": "<p>From Ryszard Rysik&#39;s notes:<br />\nThe story takes place in Bielsko and its surroundings. There is a magical Drop of Life here that powers the city and the neighboring forests. Thanks to it, nature develops and residents lead happy lives...</p>\n"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "baj-interactive-fun-step-guide-text",
+                      "name": "baj.interactive-fun.step.guide-text",
+                      "moduleId": "aa331b35-7c70-4ae4-8caf-ed6abd332c7f",
+                      "referenceId": "558822c4-ec05-498f-a675-8cab6bc5be69",
+                      "subModules": [
+                        {
+                          "moduleType": 3,
+                          "key": "type",
+                          "name": "type",
+                          "selectedIndex": 2,
+                          "selectedValue": "after-selecting"
+                        },
+                        {
+                          "moduleType": 2,
+                          "key": "text",
+                          "name": "text",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "<p>Witaj! W kolejnych salach wybierzesz elementy swojej animacji.&nbsp;Poprzedni reżyser pozostawił pewne pomysły. Do ciebie jednak należy ich wyb&oacute;r. Na ostatnim stanowisku zobaczysz gotowy film!&nbsp;<br />\nDo premiery już niewiele czasu. Zaczynajmy!&nbsp;</p>\n",
+                            "en": "<p>Hello! In the next rooms you will choose the elements of your animation. The previous director left some ideas behind. However, it is up to you to choose them. At the last stand you will see the finished film!There&#39;s not much time left until the premiere. Let&#39;s get started!</p>\n"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "moduleType": 5,
+                  "key": "preview-elements",
+                  "name": "preview-elements",
+                  "selectedModule": {
+                    "moduleType": 0,
+                    "key": "baj-interactive-fun-step-preview",
+                    "name": "baj.interactive-fun.step.preview"
+                  },
+                  "list": [
+                    {
+                      "moduleType": 0,
+                      "key": "baj-interactive-fun-step-preview",
+                      "name": "baj.interactive-fun.step.preview",
+                      "moduleId": "3b0ce1bb-fe88-4f57-8541-a798d0599e75",
+                      "referenceId": "9e62cee7-3be0-4715-93b1-907934680e83",
+                      "subModules": [
+                        {
+                          "moduleType": 1,
+                          "key": "label",
+                          "name": "label",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": null,
+                            "en": null
+                          }
+                        },
+                        {
+                          "moduleType": 1,
+                          "key": "gamification-tag",
+                          "name": "gamification-tag",
+                          "isTranslated": false,
+                          "text": "G_1"
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "file",
+                          "name": "file",
+                          "isTranslated": false,
+                          "files": "/content/07225ba6-010b-478a-9e12-08dc390b0bcb.png"
+                        }
+                      ]
+                    },
+                    {
+                      "moduleType": 0,
+                      "key": "baj-interactive-fun-step-preview",
+                      "name": "baj.interactive-fun.step.preview",
+                      "moduleId": "3b0ce1bb-fe88-4f57-8541-a798d0599e75",
+                      "referenceId": "2a2281e5-cd28-411e-930e-9b57a244d2a8",
+                      "subModules": [
+                        {
+                          "moduleType": 1,
+                          "key": "label",
+                          "name": "label",
+                          "isTranslated": true,
+                          "text": {
+                            "pl": "lilia wanilia",
+                            "en": "lilia wanilia"
+                          }
+                        },
+                        {
+                          "moduleType": 1,
+                          "key": "gamification-tag",
+                          "name": "gamification-tag",
+                          "isTranslated": false,
+                          "text": "G_2"
+                        },
+                        {
+                          "moduleType": 4,
+                          "key": "file",
+                          "name": "file",
+                          "isTranslated": false,
+                          "files": "/content/980fda5a-acc9-4928-9e13-08dc390b0bcb.png"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "moduleType": 0,
+                  "key": "baj-interactive-fun-step-outro",
+                  "name": "baj.interactive-fun.step.outro",
+                  "moduleId": "87c00428-fd2e-4919-b74e-50a5b3ab9a3b",
+                  "referenceId": "3bac5008-7797-40dd-bfa4-f68e08c22ff1",
+                  "subModules": [
+                    {
+                      "moduleType": 1,
+                      "key": "title",
+                      "name": "title",
+                      "isTranslated": true,
+                      "text": {
+                        "pl": "w drogę!",
+                        "en": "Let's go!"
+                      }
+                    },
+                    {
+                      "moduleType": 2,
+                      "key": "description",
+                      "name": "description",
+                      "isTranslated": true,
+                      "text": {
+                        "pl": "<p>w kolejej sali wybierzesz bohatera swojego filmu</p>\n",
+                        "en": "<p>in the next room you will choose the hero of your film</p>\n"
+                      }
+                    }
+                  ]
                 }
               ]
             }
           ]
-        },
-        {
-          "moduleType": 1,
-          "key": "button-text",
-          "name": "button-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "ZAPISZ UTWÓR",
-            "en": "SAVE TRACK"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "track-recording-text",
-          "name": "track-recording-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p><strong>Tw&oacute;j utw&oacute;r</strong> jest </br> przetwarzany</p>\n",
-            "en": "<p>[EN] -&nbsp;<strong>Tw&oacute;j utw&oacute;r</strong> jest </br> przetwarzany</p>\n"
-          }
-        }
-      ]
-    },
-    {
-      "moduleId": "21761c83-d85c-4a66-9cfc-720c134fbfc6",
-      "key": "cog-3-mm5-music-table-send-track",
-      "name": "cog.3.mm5.music-table-send-track",
-      "referenceId": "fb49daf0-dc55-480d-aaf3-bd829a6c6f26",
-      "subModules": [
-        {
-          "moduleType": 1,
-          "key": "title",
-          "name": "title",
-          "isTranslated": true,
-          "text": {
-            "pl": "Wyślij kompozycję",
-            "en": "[en] Wyślij kompozycję"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "name-placeholer",
-          "name": "name-placeholer",
-          "isTranslated": true,
-          "text": {
-            "pl": "WPISZ IMIĘ",
-            "en": "[EN] - WPISZ IMIĘ"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "email-placeholer",
-          "name": "email-placeholer",
-          "isTranslated": true,
-          "text": {
-            "pl": "WPISZ ADRES E-MAIL",
-            "en": "[EN] - WPISZ ADRES E-MAIL"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "accept-terms-text",
-          "name": "accept-terms-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Akceptuję <u>REGULAMIN</u></p>\n",
-            "en": "<p>[EN] Akceptuję <u>REGULAMIN</u></p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "send-button-text",
-          "name": "send-button-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "WYŚLIJ",
-            "en": "SEND"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "start-over-button-text",
-          "name": "start-over-button-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "ZACZNIJ OD NOWA",
-            "en": "START OVER"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "validation-error-title",
-          "name": "validation-error-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "Wystąpił błąd",
-            "en": "[EN] - Wystąpił błąd"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "validation-error-body",
-          "name": "validation-error-body",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Upewnij się, czy pola zostały wypełnione poprawnie i czy regulamin został zaakceptowany.&nbsp;</p>\n",
-            "en": "<p>[EN] -&nbsp;Upewnij się, czy pola zostały wypełnione poprawnie i czy regulamin został zaakceptowany.&nbsp;</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "validation-done-title",
-          "name": "validation-done-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "Twoja kompozycja muzyczna",
-            "en": "[EN] - Twoja kompozycja muzyczna"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "validation-done-body",
-          "name": "validation-done-body",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>została wysłana pod wskazany adres e-mail.</p>\n",
-            "en": "<p>[en] została wysłana pod wskazany adres e-mail.</p>\n"
-          }
-        },
-        {
-          "moduleType": 4,
-          "key": "image",
-          "name": "image",
-          "isTranslated": false,
-          "files": "file.png"
         }
       ]
     }
   ],
   "screensavers": null,
-  "globalPopups": [
-    {
-      "moduleId": "87c544e8-d3f6-4035-892a-9b7767749dc4",
-      "key": "cog-3-mm5-music-table-terms-and-conditions",
-      "name": "cog.3.mm5.music-table-terms-and-conditions",
-      "referenceId": "0fc5b527-3614-4be7-9959-e8cf236fb54d",
-      "subModules": [
-        {
-          "moduleType": 1,
-          "key": "title",
-          "name": "title",
-          "isTranslated": true,
-          "text": {
-            "pl": "Regulamin",
-            "en": "terms and conditions"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "description",
-          "name": "description",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
-            "en": "<p>[EN]&nbsp;</p>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "close-button-text",
-          "name": "close-button-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "Zamknij",
-            "en": "Close"
-          }
-        }
-      ]
-    }
-  ]
+  "globalPopups": null
 }

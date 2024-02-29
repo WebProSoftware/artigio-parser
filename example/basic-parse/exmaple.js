@@ -11,7 +11,7 @@ const presentationJson = getJsonFile();
 
 const artigio = new ArtigioParser({
   dataJson: presentationJson,
-  keyPrefix: "cog-3-mm5-music-table-",
+  keyPrefix: "baj-interactive-fun-",
   assetsPath: "C:\\test\\"
 });
 const defaultLanguage = artigio.getDefaultLanguage().value;
@@ -24,13 +24,13 @@ const screens = artigio.getScreens();
 
 
 console.log(artigio.getNameScreens())
-
-const appScreenDataAllLang = artigio.getAllLangScreenData("send-track", true);
+const appScreenDataAllLang = artigio.getAllLangScreenData("gamification", true);
 console.log(appScreenDataAllLang["en"])
+// console.log(appScreenDataAllLang["pl"])
 
 console.log(artigio.getPopups());
 const popupData = artigio.getAllLangPopupData("terms-and-conditions", true);
-console.log(popupData["pl"]);
+// console.log(popupData["pl"]);
 
 
 

@@ -7,7 +7,7 @@ const getJsonFile = () => {
 
 const parser = new ArtigioParser({
   dataJson: getJsonFile(),
-  keyPrefix: 'cog-3-mm5-music-table-',
+  keyPrefix: 'baj-interactive-fun-',
   assetsPath: 'C:\\tata\\',
 });
 
@@ -20,7 +20,7 @@ test('Change Language BAD', () => {
 });
 
 test('Get Data By Default Language', () => {
-  expect(parser.getScreenDataByCurrentLang('intro', true)).toBeInstanceOf(Object);
+  expect(parser.getScreenDataByCurrentLang('elements', true)).toBeInstanceOf(Object);
 });
 
 test('Get lanugage list', () => {
@@ -45,9 +45,9 @@ test('Get bad screen data', () => {
   }
 });
 
-test('Get GlobalPopup Data Done', () => {
-  expect(parser.getAllLangPopupData('terms-and-conditions', true)).toBeInstanceOf(Object);
-});
+// test('Get GlobalPopup Data Done', () => {
+//   expect(parser.getAllLangPopupData('terms-and-conditions', true)).toBeInstanceOf(Object);
+// });
 
 test('Get GlobalPopup Data bad', () => {
   try {

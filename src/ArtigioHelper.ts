@@ -1,24 +1,29 @@
 import { List, Screen, SubModule } from './ArtigioModel';
 
-const prepareModelElement = (artigioModule: Screen, lang: string, assetsPath: string | null = null) => {
+const prepareModelElement = (
+  artigioModule: Screen,
+  lang: string,
+  assetsPath: string | null = null,
+  prefix: string | null = null,
+) => {
   let result = {};
-
   artigioModule.subModules.forEach((item: SubModule, idx: number) => {
     let valueByModuleType = ArtigioHelper.getValueBySubmodule(item, lang, assetsPath);
     if (item.moduleType === 0 && valueByModuleType) {
       const fakeList = valueByModuleType as List;
-      valueByModuleType = prepareModelElement(fakeList, item.key, assetsPath);
+      valueByModuleType = prepareModelElement(fakeList, lang, assetsPath, prefix);
     }
     if ((item.moduleType === 5 || item.moduleType === 12) && valueByModuleType instanceof Array<List>) {
       let arrayResult: any[] = [];
       valueByModuleType.forEach((itemList: any) => {
-        arrayResult = [...arrayResult, prepareModelElement(itemList, lang, assetsPath)];
+        arrayResult = [...arrayResult, prepareModelElement(itemList, lang, assetsPath, prefix)];
       });
       valueByModuleType = arrayResult;
     }
     const value = {
-      [ArtigioHelper.convertJsonKey(item.key)]: valueByModuleType,
+      [ArtigioHelper.convertJsonKey(item.key, prefix)]: valueByModuleType,
     };
+
     result = {
       ...result,
       ...value,
@@ -62,8 +67,10 @@ const getValueBySubmodule = (subModule: SubModule, lang: string, assetsPath: str
   }
 };
 
-const convertJsonKey = (key: string) => {
+const convertJsonKey = (key: string, prefix: string | null = null) => {
   let result = '';
+  if (prefix) key = key.replace(prefix!, '');
+
   key.split('-').forEach((item, idx) => {
     result += idx > 0 ? item.charAt(0).toUpperCase() + item.slice(1) : item;
   });

@@ -67,14 +67,14 @@ class ArtigioParser {
 
   public getScreen(screenKey: string, usePrefix: boolean = false): Screen {
     const findPrefix = usePrefix ? `${this._prefix}${screenKey}` : screenKey;
-    const findScreen = this._presentationJson.screens.find((x: Screen) => x.key === findPrefix) as Screen | undefined;
+    const findScreen = this._presentationJson.screens?.find((x: Screen) => x.key === findPrefix) as Screen | undefined;
     if (!findScreen) throw new Error('screen-is-not-found');
     return findScreen;
   }
 
   public getGlobalPopup(popupKey: string, usePrefix: boolean = false): Screen {
     const findPrefix = usePrefix ? `${this._prefix}${popupKey}` : popupKey;
-    const findPopup = this._presentationJson.globalPopups.find((x: Screen) => x.key === findPrefix) as
+    const findPopup = this._presentationJson.globalPopups?.find((x: Screen) => x.key === findPrefix) as
       | Screen
       | undefined;
     if (!findPopup) throw new Error('popup-is-not-found');
@@ -83,13 +83,23 @@ class ArtigioParser {
 
   public getScreenDataByLang(screenKey: string, lang: string, usePrefix: boolean = false) {
     if (this.checkLanguageInJson(lang)) {
-      return ArtigioHelper.prepareModelElement(this.getScreen(screenKey, usePrefix), lang, this._assetsPath);
+      return ArtigioHelper.prepareModelElement(
+        this.getScreen(screenKey, usePrefix),
+        lang,
+        this._assetsPath,
+        this._prefix,
+      );
     }
     throw new TypeError('Lang ' + lang + ' is not defined on Artigio');
   }
 
   public getScreenDataByCurrentLang(screenKey: string, usePrefix: boolean = false): any {
-    return ArtigioHelper.prepareModelElement(this.getScreen(screenKey, usePrefix), this._currentLang, this._assetsPath);
+    return ArtigioHelper.prepareModelElement(
+      this.getScreen(screenKey, usePrefix),
+      this._currentLang,
+      this._assetsPath,
+      this._prefix,
+    );
   }
 
   public getAllLangScreenData(screenKey: string, usePrefix: boolean = false): any {
@@ -97,7 +107,12 @@ class ArtigioParser {
     this.getLanguageList().forEach((item, idx) => {
       result = {
         ...result,
-        [item.tag]: ArtigioHelper.prepareModelElement(this.getScreen(screenKey, usePrefix), item.tag, this._assetsPath),
+        [item.tag]: ArtigioHelper.prepareModelElement(
+          this.getScreen(screenKey, usePrefix),
+          item.tag,
+          this._assetsPath,
+          this._prefix,
+        ),
       };
     });
     return result;
@@ -112,6 +127,7 @@ class ArtigioParser {
           this.getGlobalPopup(globalPopupKey, usePrefix),
           item.tag,
           this._assetsPath,
+          this._prefix,
         ),
       };
     });

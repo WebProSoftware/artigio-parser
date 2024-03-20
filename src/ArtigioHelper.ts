@@ -1,4 +1,4 @@
-import { List, Screen, SubModule } from './ArtigioModel';
+import { Language, List, Screen, SubModule, Translation } from './ArtigioModel';
 
 const prepareModelElement = (
   artigioModule: Screen,
@@ -77,8 +77,24 @@ const convertJsonKey = (key: string, prefix: string | null = null) => {
   return result;
 };
 
+const prepareTranslation = (translations: Translation[], lang: Language, findKey: string | null = null) => {
+  let result = {};
+  if (findKey === null) {
+    translations.forEach((item, idx) => {
+      result = {
+        ...result,
+        [convertJsonKey(item.key)]: item.value[lang.tag],
+      };
+    });
+    return result;
+  } else {
+    return translations.find((item, idx) => item.key === findKey)?.value[lang.tag];
+  }
+};
+
 export const ArtigioHelper = {
   getValueBySubmodule,
   convertJsonKey,
   prepareModelElement,
+  prepareTranslation,
 };

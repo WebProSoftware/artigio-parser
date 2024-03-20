@@ -7,6 +7,7 @@ import {
   PresentationSettings,
   Resolution,
   Screen,
+  Translation,
 } from './ArtigioModel';
 import { ArtigioHelper } from './ArtigioHelper';
 
@@ -23,10 +24,18 @@ class ArtigioParser {
     this._assetsPath = options.assetsPath ? options.assetsPath : null;
   }
 
+  /**
+   * prefix means the application signature, e.g. project.x.64. By naming all containers with the same prefix, it can be used to make searching easier
+   * @param prefix
+   */
   public setPrefix(prefix: string) {
     this._prefix = prefix;
   }
 
+  /**
+   * class method that allows you to change the language for a given instance. (under development)
+   * @param langCode
+   */
   public changeLanguage(langCode: string) {
     if (this.checkLanguageInJson(langCode)) {
       this._currentLang = langCode;
@@ -35,9 +44,17 @@ class ArtigioParser {
     return false;
   }
 
+  /**
+   * Setter data json
+   * @param data
+   */
   public setPresentationJson(data: ArtigioModel) {
     this._presentationJson = data;
   }
+
+  /**
+   * Getter data json
+   */
   public getPresentationJson(): ArtigioModel {
     return this._presentationJson;
   }
@@ -52,6 +69,9 @@ class ArtigioParser {
   }
   public getLanguageList(): Language[] {
     return this._presentationJson.dictionaries.languages;
+  }
+  public getTranslationsList(): Translation[] {
+    return this._presentationJson.translations;
   }
   public getScreens(): Screen[] {
     return this._presentationJson.screens;
@@ -90,7 +110,7 @@ class ArtigioParser {
         this._prefix,
       );
     }
-    throw new TypeError('Lang ' + lang + ' is not defined on Artigio');
+    throw new Error('Lang ' + lang + ' is not defined on Artigio');
   }
 
   public getScreenDataByCurrentLang(screenKey: string, usePrefix: boolean = false): any {
@@ -134,8 +154,35 @@ class ArtigioParser {
     return result;
   }
 
+  public getAllLangTranslations(): any {
+    let result: object = {};
+    this.getLanguageList().forEach((item, idx) => {
+      result = {
+        ...result,
+        [item.tag]: ArtigioHelper.prepareTranslation(this.getTranslationsList(), item),
+      };
+    });
+    return result;
+  }
+  public getAllLangTranslationByKey(translateKey: string): any {
+    if (this.checkTranslateKeyInJson(translateKey)) {
+      let result: object = {};
+      this.getLanguageList().forEach((item, idx) => {
+        result = {
+          ...result,
+          [item.tag]: ArtigioHelper.prepareTranslation(this.getTranslationsList(), item, translateKey),
+        };
+      });
+      return result;
+    }
+    throw new Error(`The translation key ${translateKey} is not ubn the json file`);
+  }
+
   private checkLanguageInJson(lang: string): boolean {
     return !!this.getLanguageList().find((x: Language) => x.tag === lang);
+  }
+  private checkTranslateKeyInJson(transKey: string): boolean {
+    return !!this.getTranslationsList().find((x: Translation) => x.key === transKey);
   }
 }
 export default ArtigioParser;

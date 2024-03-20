@@ -14,6 +14,7 @@ import {
   Text,
   Files,
   Dictionaries,
+  Translation,
 } from './ArtigioModel';
 import ArtigioParser from './ArtigioParser';
 

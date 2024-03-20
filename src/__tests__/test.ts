@@ -7,7 +7,7 @@ const getJsonFile = () => {
 
 const parser = new ArtigioParser({
   dataJson: getJsonFile(),
-  keyPrefix: 'baj-interactive-fun-',
+  keyPrefix: 'rad-st84-rover-space-',
   assetsPath: 'C:\\tata\\',
 });
 
@@ -20,7 +20,7 @@ test('Change Language BAD', () => {
 });
 
 test('Get Data By Default Language', () => {
-  expect(parser.getScreenDataByCurrentLang('elements', true)).toBeInstanceOf(Object);
+  expect(parser.getScreenDataByCurrentLang('intro', true)).toBeInstanceOf(Object);
 });
 
 test('Get lanugage list', () => {
@@ -48,6 +48,33 @@ test('Get bad screen data', () => {
 // test('Get GlobalPopup Data Done', () => {
 //   expect(parser.getAllLangPopupData('terms-and-conditions', true)).toBeInstanceOf(Object);
 // });
+
+test('Get all translation items', () => {
+  try {
+    expect(parser.getAllLangTranslations());
+  } catch (error: any) {
+    expect(error.message).toBe('screen-is-not-found');
+  }
+});
+
+test('Get single translation item', () => {
+  const translateKey = 'rover-space';
+  try {
+    expect(parser.getAllLangTranslationByKey(translateKey));
+  } catch (error: any) {
+    expect(error.message).toBe('screen-is-not-found');
+  }
+});
+
+test('Get exception single translation item ', () => {
+  const translateKey = 'rover-spacedeeee';
+  try {
+    parser.getAllLangTranslationByKey(translateKey);
+    expect(true).toBe(false);
+  } catch (error: any) {
+    expect(error.message).toBe(`The translation key ${translateKey} is not ubn the json file`);
+  }
+});
 
 test('Get GlobalPopup Data bad', () => {
   try {

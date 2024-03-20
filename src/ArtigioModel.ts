@@ -1,11 +1,15 @@
 export type ArtigioModel = {
-  translations: any[];
+  translations: Translation[];
   presentationSettings: PresentationSettings;
   dictionaries: Dictionaries;
   styleId?: any;
   screens: Screen[];
   screensavers?: any;
   globalPopups?: any;
+};
+export type Translation = {
+  key: string;
+  value: Record<string, string>;
 };
 export type PresentationSettings = {
   presentationId: string;

@@ -1,9 +1,98 @@
- {
-  "translations": [],
+{
+  "translations": [
+    {
+      "key": "rover-space",
+      "value": {
+        "pl": "Łazik księżycowy",
+        "en": "Lunar rover",
+        "uk": "Повідомлення з бази даних"
+      }
+    },
+    {
+      "key": "start",
+      "value": {
+        "pl": "Start",
+        "en": "Start",
+        "uk": "старт"
+      }
+    },
+    {
+      "key": "here-we-go",
+      "value": {
+        "pl": "Zaczynamy",
+        "en": "Here we go",
+        "uk": "Ось і ми"
+      }
+    },
+    {
+      "key": "quest-number-text",
+      "value": {
+        "pl": "zadanie",
+        "en": "task",
+        "uk": "завдання"
+      }
+    },
+    {
+      "key": "time",
+      "value": {
+        "pl": "czas",
+        "en": "time",
+        "uk": "час"
+      }
+    },
+    {
+      "key": "sample-collection-in-progess",
+      "value": {
+        "pl": "trwa pobieranie próbki",
+        "en": "Sample collection in progress",
+        "uk": "Відбір зразків триває"
+      }
+    },
+    {
+      "key": "connecting-in-progress",
+      "value": {
+        "pl": "trwa łączenie",
+        "en": "Connecting in progress",
+        "uk": "Виконується підключення"
+      }
+    },
+    {
+      "key": "your-result",
+      "value": {
+        "pl": "TWÓJ WYNIK ",
+        "en": "YOUR RESULT",
+        "uk": "ВАШ РЕЗУЛЬТАТ"
+      }
+    },
+    {
+      "key": "task-completed",
+      "value": {
+        "pl": "Wykonane zadania",
+        "en": "Completed tasks",
+        "uk": "Виконані завдання"
+      }
+    },
+    {
+      "key": "sec",
+      "value": {
+        "pl": "sekund|sekundy",
+        "en": "seconds",
+        "uk": "секунд"
+      }
+    },
+    {
+      "key": "finish",
+      "value": {
+        "pl": "Zakończ",
+        "en": "finish",
+        "uk": "Закінчити"
+      }
+    }
+  ],
   "presentationSettings": {
-    "presentationId": "1d3fbd9c-62a0-4334-a91c-fe605563a732",
-    "key": "baj-interactive-fun",
-    "name": "BAJ.interactive-fun",
+    "presentationId": "c8be7c76-30cd-40e5-b902-5371f366b94f",
+    "key": "rad-st48-rover-space",
+    "name": "rad.st48.rover-space",
     "defaultLanguage": {
       "name": "Polish",
       "value": 1,
@@ -15,11 +104,6 @@
     "resolution": {
       "width": 1920,
       "height": 1080
-    },
-    "hilight": {
-      "id": 1,
-      "label": "Ekran 1",
-      "description": "Sala 1"
     }
   },
   "dictionaries": {
@@ -28,83 +112,27 @@
         "id": 0,
         "name": "Custom",
         "keys": [
-          "baj-interactive-fun-elements",
-          "baj-interactive-fun-guide-options",
-          "baj-interactive-fun-gamification",
-          "baj-interactive-fun-step",
-          "baj-interactive-fun-step-instruction",
-          "baj-interactive-fun-step-selection-item",
-          "baj-interactive-fun-step-guide-text",
-          "baj-interactive-fun-step-preview",
-          "baj-interactive-fun-step-outro"
+          "rad-st84-rover-space-intro",
+          "rad-st84-rover-space-quests",
+          "rad-st84-rover-space-quest",
+          "rad-st84-rover-space-space-base-messages"
         ]
       },
       {
         "id": 2,
         "name": "RichTextArea",
         "keys": [
-          "screensaver-create-yours-movie-text",
-          "button-next-text",
-          "button-end-text",
-          "unprintable-text",
-          "scan-card-title",
-          "scan-card-subtitle",
-          "scan-card-ok",
-          "scan-card-error-profile-is-exist",
-          "scan-card-error-profile-bad-order",
-          "scan-card-error-internal",
-          "finish-step-1-text",
-          "finish-step-2-text",
-          "description",
-          "display-name",
-          "text"
-        ]
-      },
-      {
-        "id": 1,
-        "name": "Text",
-        "keys": [
-          "guide-choose-text-title",
-          "form-title-label",
-          "form-director-label",
-          "not-elected-text",
-          "name",
-          "screensaver-title-step",
           "title",
-          "gamification-tag",
-          "label"
-        ]
-      },
-      {
-        "id": 4,
-        "name": "File",
-        "keys": [
-          "logo",
-          "finish-step-1-icon",
-          "finish-step-2-icon",
-          "avatar-1",
-          "avatar-2",
-          "not-elected-icon",
-          "icon",
-          "preview-image",
-          "file"
+          "instruction",
+          "description",
+          "instruction-sequence"
         ]
       },
       {
         "id": 5,
         "name": "List",
         "keys": [
-          "steps",
-          "selection-items",
-          "guide-texts",
-          "preview-elements"
-        ]
-      },
-      {
-        "id": 13,
-        "name": "Number",
-        "keys": [
-          "step-id"
+          "quests"
         ]
       },
       {
@@ -112,6 +140,34 @@
         "name": "Enum",
         "keys": [
           "type"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Number",
+        "keys": [
+          "execution-time"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Text",
+        "keys": [
+          "button-text",
+          "command-on",
+          "command-off",
+          "title",
+          "time-end",
+          "good-job",
+          "good-luck",
+          "low-battery"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "File",
+        "keys": [
+          "video-preview"
         ]
       }
     ],
@@ -125,6 +181,11 @@
         "id": 2,
         "tag": "en",
         "name": "English"
+      },
+      {
+        "id": 6,
+        "tag": "uk",
+        "name": "Ukrainian"
       }
     ],
     "enumLists": [
@@ -132,11 +193,10 @@
         "key": "type",
         "name": "type",
         "enums": [
-          "selected-primary",
-          "selected-secondary",
-          "after-selecting",
-          "instruction",
-          "form-alert"
+          "goToPoint",
+          "getMaterial",
+          "getCapture",
+          "intro"
         ]
       }
     ]
@@ -144,557 +204,321 @@
   "styleId": null,
   "screens": [
     {
-      "moduleId": "b9e46722-f63b-40cc-9f85-380fc62c1d6f",
-      "key": "baj-interactive-fun-elements",
-      "name": "baj.interactive-fun.elements",
-      "referenceId": "85c2e91e-ea55-4872-8c55-f83a232bc574",
+      "moduleId": "0aa6ff00-adea-4e8f-8c8e-56dcc5760465",
+      "key": "rad-st84-rover-space-intro",
+      "name": "rad.st48.rover-space.intro",
+      "referenceId": "98228fac-642e-4d8a-b2c4-e6b64c51bbb7",
       "subModules": [
         {
           "moduleType": 2,
-          "key": "screensaver-create-yours-movie-text",
-          "name": "screensaver-create-yours-movie-text",
+          "key": "title",
+          "name": "title",
           "isTranslated": true,
           "text": {
-            "pl": "<p>stw&oacute;rz<br />\nwłasny film</p>\n",
-            "en": "<p>create<br />\nown movie</p>\n"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "guide-choose-text-title",
-          "name": "guide-choose-text-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "wybierz swojego asystenta",
-            "en": "choose your assistant"
+            "pl": "<p><strong>Przeprowadź </strong>misję księżycową!</p>\n",
+            "en": "<p><strong>Carry out</strong> a lunar mission!</p>\n",
+            "uk": null
           }
         },
         {
           "moduleType": 2,
-          "key": "button-next-text",
-          "name": "button-next-text",
+          "key": "instruction",
+          "name": "instruction",
           "isTranslated": true,
           "text": {
-            "pl": "<p>Dalej</p>\n",
-            "en": "<p>Next</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "button-end-text",
-          "name": "button-end-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Zakończ</p>\n",
-            "en": "<p>Finish</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "unprintable-text",
-          "name": "unprintable-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>niecenzuralny wyraz</p>\n",
-            "en": "<p>obscene expression</p>\n"
-          }
-        },
-        {
-          "moduleType": 4,
-          "key": "logo",
-          "name": "logo",
-          "isTranslated": false,
-          "files": "/content/"
-        },
-        {
-          "moduleType": 1,
-          "key": "form-title-label",
-          "name": "form-title-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "Tytuł",
-            "en": "Title"
-          }
-        },
-        {
-          "moduleType": 1,
-          "key": "form-director-label",
-          "name": "form-director-label",
-          "isTranslated": true,
-          "text": {
-            "pl": "Reżyseria",
-            "en": "Direction"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "scan-card-title",
-          "name": "scan-card-title",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p><strong>zeskanuj kartę,</strong><br />\n&nbsp;</p>\n",
-            "en": "<p><strong>scan the card,</strong></p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "scan-card-subtitle",
-          "name": "scan-card-subtitle",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>aby rozpocząć podr&oacute;ż</p>\n",
-            "en": "<p>to start the journey</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "scan-card-ok",
-          "name": "scan-card-ok",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Gotowe. Zaczynamy!&nbsp;</p>\n",
-            "en": "<p>Ready. Here we go!</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "scan-card-error-profile-is-exist",
-          "name": "scan-card-error-profile-is-exist",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Już tu byłeś. Ruszaj dalej!&nbsp;</p>\n",
-            "en": "<p>You&#39;ve been here before. Keep moving!</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "scan-card-error-profile-bad-order",
-          "name": "scan-card-error-profile-bad-order",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Ups! Pominąłeś stanowisko. Zawr&oacute;ć.&nbsp;</p>\n",
-            "en": "<p>Oops! You missed the position. Turn around.</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "scan-card-error-internal",
-          "name": "scan-card-error-internal",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p>Błąd systemowy&nbsp;</p>\n",
-            "en": "<p>System error</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "finish-step-1-text",
-          "name": "finish-step-1-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p><strong>zeskanuj kod qr</strong></p>\n\n<p>aby wejść na stronę i założyć konto</p>\n",
-            "en": "<p><strong>scan the qr code</strong></p>\n\n<p>to enter the website and create an account</p>\n"
-          }
-        },
-        {
-          "moduleType": 2,
-          "key": "finish-step-2-text",
-          "name": "finish-step-2-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "<p><strong>zał&oacute;ż konto</strong></p>\n\n<p>użyj kodu z karty reżysera</p>\n",
-            "en": "<p><strong>Create an account</strong></p>\n\n<p>use the code from the director&#39;s card</p>\n"
-          }
-        },
-        {
-          "moduleType": 4,
-          "key": "finish-step-1-icon",
-          "name": "finish-step-1-icon",
-          "isTranslated": false,
-          "files": "/content/6b2ca680-881b-48b6-9e15-08dc390b0bcb.png"
-        },
-        {
-          "moduleType": 4,
-          "key": "finish-step-2-icon",
-          "name": "finish-step-2-icon",
-          "isTranslated": false,
-          "files": "/content/f81517f8-917d-430b-9e16-08dc390b0bcb.png"
-        }
-      ]
-    },
-    {
-      "moduleId": "5d16affb-7d58-466d-a24d-826af74bee9c",
-      "key": "baj-interactive-fun-guide-options",
-      "name": "baj.interactive-fun.guide-options",
-      "referenceId": "0bb329b0-d6f0-4529-b9d5-494baae7687b",
-      "subModules": [
-        {
-          "moduleType": 4,
-          "key": "avatar-1",
-          "name": "avatar-1",
-          "isTranslated": false,
-          "files": "/content/8bffb043-e58c-47a3-9e10-08dc390b0bcb.png"
-        },
-        {
-          "moduleType": 4,
-          "key": "avatar-2",
-          "name": "avatar-2",
-          "isTranslated": false,
-          "files": "/content/03936c66-770b-45fe-9e11-08dc390b0bcb.png"
-        },
-        {
-          "moduleType": 4,
-          "key": "not-elected-icon",
-          "name": "not-elected-icon",
-          "isTranslated": false,
-          "files": "/content/32678474-b643-451c-9e14-08dc390b0bcb.png"
-        },
-        {
-          "moduleType": 1,
-          "key": "not-elected-text",
-          "name": "not-elected-text",
-          "isTranslated": true,
-          "text": {
-            "pl": "instrukcja",
-            "en": "instruction"
+            "pl": "<ul>\n\t<li><strong>Poruszaj się</strong> łazikiem po powierzchni Księżyca, korzystając z manipulatora.</li>\n\t<li><strong>Wykonaj zadania</strong> przysłane z bazy.</li>\n\t<li><strong>Pamiętaj</strong>, że sygnał potrzebuje czasu, aby dotrzeć na Księżyc. Łazik poruszy się dopiero po chwili od wysłania komunikatu przy pomocy ruchu joystickiem. <strong>Powodzenia!</strong></li>\n</ul>\n",
+            "en": "<ul>\n\t<li><strong>Navigate</strong> the rover on the lunar surface using the manipulator.</li>\n\t<li><strong>Complete tasks</strong> sent from the database.</li>\n\t<li><strong>Remember</strong> that the signal takes time to reach the Moon. The rover will only move a moment after sending the message using the joystick.<strong> Good luck!</strong></li>\n</ul>\n",
+            "uk": null
           }
         }
       ]
     },
     {
-      "moduleId": "4c780480-72d9-4692-9001-3d44b20792e8",
-      "key": "baj-interactive-fun-gamification",
-      "name": "baj.interactive-fun.gamification",
-      "referenceId": "5c066823-94fa-4a15-ae74-ee912ea62d7a",
+      "moduleId": "7e9be869-8bd3-43a1-b4b8-e8bcb1ad3229",
+      "key": "rad-st84-rover-space-quests",
+      "name": "rad.st48.rover-space.quests",
+      "referenceId": "2597dec0-66ee-4e58-9d3b-46df5648b68a",
       "subModules": [
         {
           "moduleType": 5,
-          "key": "steps",
-          "name": "steps",
+          "key": "quests",
+          "name": "quests",
           "selectedModule": {
             "moduleType": 0,
-            "key": "baj-interactive-fun-step",
-            "name": "baj.interactive-fun.step"
+            "key": "rad-st84-rover-space-quest",
+            "name": "rad.st48.rover-space.quest"
           },
           "list": [
             {
               "moduleType": 0,
-              "key": "baj-interactive-fun-step",
-              "name": "baj.interactive-fun.step",
-              "moduleId": "d9fcb958-c9a9-40a0-9e49-1cc3c2ebfa75",
-              "referenceId": "0ddda6a5-51d6-499d-bb16-54d546c2d3ab",
+              "key": "rad-st84-rover-space-quest",
+              "name": "rad.st48.rover-space.quest",
+              "moduleId": "7f044961-6913-4069-8249-ccd4bce868f2",
+              "referenceId": "60aa79db-b091-4586-b372-4bfd9d9b2cd1",
               "subModules": [
                 {
-                  "moduleType": 13,
-                  "key": "step-id",
-                  "name": "step-id",
-                  "number": "1"
-                },
-                {
-                  "moduleType": 1,
-                  "key": "name",
-                  "name": "name",
-                  "isTranslated": false,
-                  "text": "Wybór przewodnika"
-                },
-                {
-                  "moduleType": 1,
-                  "key": "screensaver-title-step",
-                  "name": "screensaver-title-step",
+                  "moduleType": 2,
+                  "key": "description",
+                  "name": "description",
                   "isTranslated": true,
                   "text": {
-                    "pl": "zostań reżyserem animacji!",
-                    "en": "become an animation director!"
+                    "pl": "<p>Dojedź do jednego z punt&oacute;w widocznych na mapie aby rozpocząć jedno z zadań</p>\n",
+                    "en": "<p>Reach one of the points visible on the map to start one of the tasks</p>\n",
+                    "uk": null
                   }
                 },
                 {
-                  "moduleType": 0,
-                  "key": "baj-interactive-fun-step-instruction",
-                  "name": "baj.interactive-fun.step.instruction",
-                  "moduleId": "e339c057-f950-441c-a9cf-5f869212dd8e",
-                  "referenceId": "64cced88-08c2-40b7-aca9-17989b710292",
-                  "subModules": [
-                    {
-                      "moduleType": 1,
-                      "key": "title",
-                      "name": "title",
-                      "isTranslated": true,
-                      "text": {
-                        "pl": "zostań reżyserem animacji!",
-                        "en": "zostań reżyserem animacji!"
-                      }
-                    },
-                    {
-                      "moduleType": 2,
-                      "key": "description",
-                      "name": "description",
-                      "isTranslated": true,
-                      "text": {
-                        "pl": "<p>Reżyser naszego Studia, Ryszard Rysik, zniknął miesiąc temu w niewyjaśnionych okolicznościach. Pozostawił po sobie projekty i plany &ndash; elementy trzeba jednak złożyć w całość, by powstała kompletna animacja. Termin premiery wyznaczono na dziś! Zostań reżyserem i z pomocą bohater&oacute;w Warzywnego Biuro Śledczego ukończ film na czas!</p>\n\n<p><strong>Kamera! Akcja!</strong></p>\n",
-                        "en": "<p>The director of our Studio, Ryszard Rysik, disappeared a month ago in unexplained circumstances. He left behind designs and plans - but the elements must be put together to create a complete animation. The premiere date is set for today! Become a director and, with the help of the heroes of the Vegetable Investigation Bureau, complete the film on time!</p>\n\n<p><strong>Camera! Share!</strong></p>\n"
-                      }
-                    },
-                    {
-                      "moduleType": 4,
-                      "key": "icon",
-                      "name": "icon",
-                      "isTranslated": false,
-                      "files": null
-                    }
-                  ]
+                  "moduleType": 3,
+                  "key": "type",
+                  "name": "type",
+                  "selectedIndex": 3,
+                  "selectedValue": "intro"
                 },
                 {
-                  "moduleType": 5,
-                  "key": "selection-items",
-                  "name": "selection-items",
-                  "selectedModule": {
-                    "moduleType": 0,
-                    "key": "baj-interactive-fun-step-selection-item",
-                    "name": "baj.interactive-fun.step.selection-item"
-                  },
-                  "list": [
-                    {
-                      "moduleType": 0,
-                      "key": "baj-interactive-fun-step-selection-item",
-                      "name": "baj.interactive-fun.step.selection-item",
-                      "moduleId": "8aadf8ae-39fb-4eaa-aab6-c8fdf85da406",
-                      "referenceId": "9f94b950-fd2a-478b-9726-e4a3c600b563",
-                      "subModules": [
-                        {
-                          "moduleType": 2,
-                          "key": "display-name",
-                          "name": "display-name",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>syriusz pieprz</p>\n",
-                            "en": "<p>syriusz pieprz</p>\n"
-                          }
-                        },
-                        {
-                          "moduleType": 1,
-                          "key": "gamification-tag",
-                          "name": "gamification-tag",
-                          "isTranslated": false,
-                          "text": "G_1"
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "preview-image",
-                          "name": "preview-image",
-                          "isTranslated": false,
-                          "files": "/content/8bffb043-e58c-47a3-9e10-08dc390b0bcb.png"
-                        }
-                      ]
-                    },
-                    {
-                      "moduleType": 0,
-                      "key": "baj-interactive-fun-step-selection-item",
-                      "name": "baj.interactive-fun.step.selection-item",
-                      "moduleId": "8aadf8ae-39fb-4eaa-aab6-c8fdf85da406",
-                      "referenceId": "d498c076-9e33-4549-81f2-13e0fc95acb1",
-                      "subModules": [
-                        {
-                          "moduleType": 2,
-                          "key": "display-name",
-                          "name": "display-name",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>lilia wanilia</p>\n",
-                            "en": "<p>lilia wanilia</p>\n"
-                          }
-                        },
-                        {
-                          "moduleType": 1,
-                          "key": "gamification-tag",
-                          "name": "gamification-tag",
-                          "isTranslated": false,
-                          "text": "G_2"
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "preview-image",
-                          "name": "preview-image",
-                          "isTranslated": false,
-                          "files": "/content/03936c66-770b-45fe-9e11-08dc390b0bcb.png"
-                        }
-                      ]
-                    }
-                  ]
+                  "moduleType": 13,
+                  "key": "execution-time",
+                  "name": "execution-time",
+                  "number": "30"
                 },
                 {
-                  "moduleType": 5,
-                  "key": "guide-texts",
-                  "name": "guide-texts",
-                  "selectedModule": {
-                    "moduleType": 0,
-                    "key": "baj-interactive-fun-step-guide-text",
-                    "name": "baj.interactive-fun.step.guide-text"
-                  },
-                  "list": [
-                    {
-                      "moduleType": 0,
-                      "key": "baj-interactive-fun-step-guide-text",
-                      "name": "baj.interactive-fun.step.guide-text",
-                      "moduleId": "aa331b35-7c70-4ae4-8caf-ed6abd332c7f",
-                      "referenceId": "08b5217c-21c9-49dc-badf-5ccf237d7225",
-                      "subModules": [
-                        {
-                          "moduleType": 3,
-                          "key": "type",
-                          "name": "type",
-                          "selectedIndex": 3,
-                          "selectedValue": "instruction"
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "text",
-                          "name": "text",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>Z notatek Ryszarda Rysika: &nbsp;<br />\nHistoria dzieje się w Bielsku i jego okolicach. Znajduje się tutaj magiczna Kropla Życia, kt&oacute;ra zasila miasto i sąsiednie lasy. Dzięki niej przyroda rozwija się, a mieszkańcy wiodą szczęśliwe życie...</p>\n",
-                            "en": "<p>From Ryszard Rysik&#39;s notes:<br />\nThe story takes place in Bielsko and its surroundings. There is a magical Drop of Life here that powers the city and the neighboring forests. Thanks to it, nature develops and residents lead happy lives...</p>\n"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "moduleType": 0,
-                      "key": "baj-interactive-fun-step-guide-text",
-                      "name": "baj.interactive-fun.step.guide-text",
-                      "moduleId": "aa331b35-7c70-4ae4-8caf-ed6abd332c7f",
-                      "referenceId": "558822c4-ec05-498f-a675-8cab6bc5be69",
-                      "subModules": [
-                        {
-                          "moduleType": 3,
-                          "key": "type",
-                          "name": "type",
-                          "selectedIndex": 2,
-                          "selectedValue": "after-selecting"
-                        },
-                        {
-                          "moduleType": 2,
-                          "key": "text",
-                          "name": "text",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "<p>Witaj! W kolejnych salach wybierzesz elementy swojej animacji.&nbsp;Poprzedni reżyser pozostawił pewne pomysły. Do ciebie jednak należy ich wyb&oacute;r. Na ostatnim stanowisku zobaczysz gotowy film!&nbsp;<br />\nDo premiery już niewiele czasu. Zaczynajmy!&nbsp;</p>\n",
-                            "en": "<p>Hello! In the next rooms you will choose the elements of your animation. The previous director left some ideas behind. However, it is up to you to choose them. At the last stand you will see the finished film!There&#39;s not much time left until the premiere. Let&#39;s get started!</p>\n"
-                          }
-                        }
-                      ]
-                    }
-                  ]
+                  "moduleType": 1,
+                  "key": "button-text",
+                  "name": "button-text",
+                  "isTranslated": true,
+                  "text": {
+                    "pl": "URUCHOM ANTENE",
+                    "en": "START THE ANTENNA",
+                    "uk": null
+                  }
                 },
                 {
-                  "moduleType": 5,
-                  "key": "preview-elements",
-                  "name": "preview-elements",
-                  "selectedModule": {
-                    "moduleType": 0,
-                    "key": "baj-interactive-fun-step-preview",
-                    "name": "baj.interactive-fun.step.preview"
-                  },
-                  "list": [
-                    {
-                      "moduleType": 0,
-                      "key": "baj-interactive-fun-step-preview",
-                      "name": "baj.interactive-fun.step.preview",
-                      "moduleId": "3b0ce1bb-fe88-4f57-8541-a798d0599e75",
-                      "referenceId": "9e62cee7-3be0-4715-93b1-907934680e83",
-                      "subModules": [
-                        {
-                          "moduleType": 1,
-                          "key": "label",
-                          "name": "label",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": null,
-                            "en": null
-                          }
-                        },
-                        {
-                          "moduleType": 1,
-                          "key": "gamification-tag",
-                          "name": "gamification-tag",
-                          "isTranslated": false,
-                          "text": "G_1"
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "file",
-                          "name": "file",
-                          "isTranslated": false,
-                          "files": "/content/07225ba6-010b-478a-9e12-08dc390b0bcb.png"
-                        }
-                      ]
-                    },
-                    {
-                      "moduleType": 0,
-                      "key": "baj-interactive-fun-step-preview",
-                      "name": "baj.interactive-fun.step.preview",
-                      "moduleId": "3b0ce1bb-fe88-4f57-8541-a798d0599e75",
-                      "referenceId": "2a2281e5-cd28-411e-930e-9b57a244d2a8",
-                      "subModules": [
-                        {
-                          "moduleType": 1,
-                          "key": "label",
-                          "name": "label",
-                          "isTranslated": true,
-                          "text": {
-                            "pl": "lilia wanilia",
-                            "en": "lilia wanilia"
-                          }
-                        },
-                        {
-                          "moduleType": 1,
-                          "key": "gamification-tag",
-                          "name": "gamification-tag",
-                          "isTranslated": false,
-                          "text": "G_2"
-                        },
-                        {
-                          "moduleType": 4,
-                          "key": "file",
-                          "name": "file",
-                          "isTranslated": false,
-                          "files": "/content/980fda5a-acc9-4928-9e13-08dc390b0bcb.png"
-                        }
-                      ]
-                    }
-                  ]
+                  "moduleType": 1,
+                  "key": "command-on",
+                  "name": "command-on",
+                  "isTranslated": false,
+                  "text": "antenaon"
                 },
                 {
-                  "moduleType": 0,
-                  "key": "baj-interactive-fun-step-outro",
-                  "name": "baj.interactive-fun.step.outro",
-                  "moduleId": "87c00428-fd2e-4919-b74e-50a5b3ab9a3b",
-                  "referenceId": "3bac5008-7797-40dd-bfa4-f68e08c22ff1",
-                  "subModules": [
-                    {
-                      "moduleType": 1,
-                      "key": "title",
-                      "name": "title",
-                      "isTranslated": true,
-                      "text": {
-                        "pl": "w drogę!",
-                        "en": "Let's go!"
-                      }
-                    },
-                    {
-                      "moduleType": 2,
-                      "key": "description",
-                      "name": "description",
-                      "isTranslated": true,
-                      "text": {
-                        "pl": "<p>w kolejej sali wybierzesz bohatera swojego filmu</p>\n",
-                        "en": "<p>in the next room you will choose the hero of your film</p>\n"
-                      }
-                    }
-                  ]
+                  "moduleType": 1,
+                  "key": "command-off",
+                  "name": "command-off",
+                  "isTranslated": false,
+                  "text": "antenaoff"
+                },
+                {
+                  "moduleType": 4,
+                  "key": "video-preview",
+                  "name": "video-preview",
+                  "isTranslated": false,
+                  "files": "/content/297de014-9f28-443d-9035-08dc4806e029.mp4"
+                }
+              ]
+            },
+            {
+              "moduleType": 0,
+              "key": "rad-st84-rover-space-quest",
+              "name": "rad.st48.rover-space.quest",
+              "moduleId": "7f044961-6913-4069-8249-ccd4bce868f2",
+              "referenceId": "c5f79fbd-1930-4da1-933b-b3139f1ee3eb",
+              "subModules": [
+                {
+                  "moduleType": 2,
+                  "key": "description",
+                  "name": "description",
+                  "isTranslated": true,
+                  "text": {
+                    "pl": "<p>Dojedź do punktu zaznaczonego na mapie aby pobrać pr&oacute;bkę skały</p>\n",
+                    "en": "<p>Go to the point marked on the map to collect a rock sample</p>\n",
+                    "uk": null
+                  }
+                },
+                {
+                  "moduleType": 3,
+                  "key": "type",
+                  "name": "type",
+                  "selectedIndex": 1,
+                  "selectedValue": "getMaterial"
+                },
+                {
+                  "moduleType": 13,
+                  "key": "execution-time",
+                  "name": "execution-time",
+                  "number": "30"
+                },
+                {
+                  "moduleType": 1,
+                  "key": "button-text",
+                  "name": "button-text",
+                  "isTranslated": true,
+                  "text": {
+                    "pl": "URUCHOM ŚWIDER",
+                    "en": "START THE AUGER",
+                    "uk": null
+                  }
+                },
+                {
+                  "moduleType": 1,
+                  "key": "command-on",
+                  "name": "command-on",
+                  "isTranslated": false,
+                  "text": "swideron"
+                },
+                {
+                  "moduleType": 1,
+                  "key": "command-off",
+                  "name": "command-off",
+                  "isTranslated": false,
+                  "text": "swideroff"
+                },
+                {
+                  "moduleType": 4,
+                  "key": "video-preview",
+                  "name": "video-preview",
+                  "isTranslated": false,
+                  "files": "/content/297de014-9f28-443d-9035-08dc4806e029.mp4"
+                }
+              ]
+            },
+            {
+              "moduleType": 0,
+              "key": "rad-st84-rover-space-quest",
+              "name": "rad.st48.rover-space.quest",
+              "moduleId": "7f044961-6913-4069-8249-ccd4bce868f2",
+              "referenceId": "f24a8b8b-7401-441c-a802-567b59bf3ae4",
+              "subModules": [
+                {
+                  "moduleType": 2,
+                  "key": "description",
+                  "name": "description",
+                  "isTranslated": true,
+                  "text": {
+                    "pl": "<p>Dojedź do punktu zaznaczonego na mapie aby sfotografować podłoże</p>\n",
+                    "en": "<p>Drive to the point marked on the map to take a photo of the ground</p>\n",
+                    "uk": null
+                  }
+                },
+                {
+                  "moduleType": 3,
+                  "key": "type",
+                  "name": "type",
+                  "selectedIndex": 2,
+                  "selectedValue": "getCapture"
+                },
+                {
+                  "moduleType": 13,
+                  "key": "execution-time",
+                  "name": "execution-time",
+                  "number": "60"
+                },
+                {
+                  "moduleType": 1,
+                  "key": "button-text",
+                  "name": "button-text",
+                  "isTranslated": true,
+                  "text": {
+                    "pl": "SFOTOGRAFUJ PODŁOŻĘ",
+                    "en": "PHOTOGRAPH THE GROUND",
+                    "uk": null
+                  }
+                },
+                {
+                  "moduleType": 1,
+                  "key": "command-on",
+                  "name": "command-on",
+                  "isTranslated": false,
+                  "text": null
+                },
+                {
+                  "moduleType": 1,
+                  "key": "command-off",
+                  "name": "command-off",
+                  "isTranslated": false,
+                  "text": null
+                },
+                {
+                  "moduleType": 4,
+                  "key": "video-preview",
+                  "name": "video-preview",
+                  "isTranslated": false,
+                  "files": null
                 }
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "moduleId": "22686f0f-ed11-463b-aa6b-051552962353",
+      "key": "rad-st84-rover-space-space-base-messages",
+      "name": "rad.st48.rover-space.space-base-messages",
+      "referenceId": "94603388-3850-4904-bfe7-e3e62511ca8b",
+      "subModules": [
+        {
+          "moduleType": 1,
+          "key": "title",
+          "name": "title",
+          "isTranslated": true,
+          "text": {
+            "pl": "Wiadomość z bazy",
+            "en": "Message from the space base",
+            "uk": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "time-end",
+          "name": "time-end",
+          "isTranslated": true,
+          "text": {
+            "pl": "Niestety, tym razem nie udało się",
+            "en": "Unfortunately, this time it didn't work",
+            "uk": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "good-job",
+          "name": "good-job",
+          "isTranslated": true,
+          "text": {
+            "pl": "Dobra robota! ",
+            "en": "Good job!",
+            "uk": null
+          }
+        },
+        {
+          "moduleType": 2,
+          "key": "instruction-sequence",
+          "name": "instruction-sequence",
+          "isTranslated": true,
+          "text": {
+            "pl": "<p>Aby wykonać &nbsp;zdjęcie &nbsp;manewruj &nbsp;Joystickiem według określonego schematu</p>\n",
+            "en": "<p>To take a photo, move the Joystick according to a specific pattern</p>\n",
+            "uk": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "good-luck",
+          "name": "good-luck",
+          "isTranslated": true,
+          "text": {
+            "pl": "Powodzenia!",
+            "en": "Good luck!",
+            "uk": null
+          }
+        },
+        {
+          "moduleType": 1,
+          "key": "low-battery",
+          "name": "low-battery",
+          "isTranslated": true,
+          "text": {
+            "pl": "SŁABA BATERIA",
+            "en": "LOW BATTERY",
+            "uk": null
+          }
         }
       ]
     }

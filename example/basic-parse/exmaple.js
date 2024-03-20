@@ -11,7 +11,7 @@ const presentationJson = getJsonFile();
 
 const artigio = new ArtigioParser({
   dataJson: presentationJson,
-  keyPrefix: "baj-interactive-fun-",
+  keyPrefix: "rad-st84-rover-space-",
   assetsPath: "C:\\test\\"
 });
 const defaultLanguage = artigio.getDefaultLanguage().value;
@@ -24,12 +24,19 @@ const screens = artigio.getScreens();
 
 
 console.log(artigio.getNameScreens())
-const appScreenDataAllLang = artigio.getAllLangScreenData("gamification", true);
-console.log(appScreenDataAllLang["en"])
+const appScreenDataAllLang = artigio.getAllLangScreenData("intro", true);
+console.log(appScreenDataAllLang);
+// console.log(appScreenDataAllLang["en"])
 // console.log(appScreenDataAllLang["pl"])
 
-console.log(artigio.getPopups());
-const popupData = artigio.getAllLangPopupData("terms-and-conditions", true);
+const translationsAllLang = artigio.getAllLangTranslations();
+console.log(translationsAllLang)
+
+const translationByKey = artigio.getAllLangTranslationByKey("rover-space");
+console.log(translationByKey);
+
+// console.log(artigio.getPopups());
+// const popupData = artigio.getAllLangPopupData("terms-and-conditions", true);
 // console.log(popupData["pl"]);
 
 
